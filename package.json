@@ -16,7 +16,9 @@
   "private": true,
   "workspaces": [
     "packages/*",
-    "../buffet/packages/buffet-pui/icons"
+    "../buffet/packages/buffet-pui/*",
+    "../banquet-tools/packages/banquet-cli",
+    "../banquet-tools/packages/banquet-webpack"
   ],
   "devDependencies": {
     "@toasttab/eslint-plugin-toast": "^1.2.0",
@@ -32,9 +34,10 @@
     "react-dom": "^16.13.1"
   },
   "dependencies": {
-    "@toasttab/banquet-cli": "^0.1.0",
-    "@toasttab/banquet-single-spa-react": "^0.1.0-alpha.4",
+    "@toasttab/banquet-cli": "0.2.0-alpha.0",
+    "@toasttab/banquet-single-spa-react": "0.2.0-alpha.0",
     "@toasttab/buffet-pui-buttons": "1.0.0-alpha.4",
+    "@toasttab/buffet-pui-checkbox": "1.0.0-alpha.2",
     "@toasttab/buffet-pui-icons": "2.0.0-alpha.0",
     "@toasttab/buffet-pui-styles": "1.0.0-alpha.4",
     "@toasttab/error-boundary": "^0.1.1",
