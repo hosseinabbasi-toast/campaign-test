@@ -1,0 +1,68 @@
+{
+  "name": "{{name}}",
+  "version": "1.0.0-SNAPSHOT",
+  "main": "index.js",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "banquet start",
+    "dev": "yarn start",
+    "build": "banquet build",
+    "analyze": "banquet analyze",
+    "test": "banquet test",
+    "watch": "banquet test --watch",
+    "coverage": "banquet test --coverage",
+    "storybook": "banquet storybook-start",
+    "storybook-build": "banquet storybook-build"
+  },
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "../banquet-tools/packages/*"
+  ],
+  "devDependencies": {
+    "@toasttab/banquet-cli": "^0.2.0-alpha.1",
+    "@toasttab/toast-babel": "^0.1.0",
+    "@toasttab/eslint-plugin-toast": "^1.2.0",
+    "@types/jest": "^26.0.0",
+    "@types/react": "^16.9.23",
+    "@types/testing-library__react": "^9.1.3",
+    "eslint": "^6.8.0",
+    "husky": "^4.2.5",
+    "lerna": "^3.20.2",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4"
+  },
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "@toasttab/banquet-single-spa-react": "0.2.0-alpha.1",
+    "@toasttab/buffet-pui-styles": "1.0.0-alpha.4",
+    "@toasttab/error-boundary": "^0.1.1"
+  },
+  "banquet": {
+    "template": "{{templateName}}",
+    "version": "{{templateVersion}}",
+    "cssScope": "{{cssScope}}",
+    "storybook": {
+      "stories": [
+        "src/**/*.story.@(js|jsx|ts|tsx|mdx)",
+        "packages/**/*.story.@(js|jsx|ts|tsx|mdx)"
+      ]
+    }
+  },
+  "volta": {
+    "node": "12.18.0",
+    "yarn": "1.22.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "yarn test"
+    }
+  },
+  "prettier": {
+    "semi": false,
+    "jsxSingleQuote": true,
+    "singleQuote": true
+  }
+}
