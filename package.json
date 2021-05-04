@@ -3,7 +3,7 @@
   "version": "1.0.0-SNAPSHOT",
   "license": "UNLICENSED",
   "scripts": {
-    "init": "banquet init"
+    "create": "banquet create && code ./README.md"
   },
   "private": true,
   "workspaces": [
@@ -11,7 +11,7 @@
   ],
   "devDependencies": {
     "@toasttab/eslint-plugin-toast": "^1.3.0",
-    "@toasttab/banquet-cli": "^0.2.0-alpha.5"
+    "@toasttab/banquet-cli": "^0.2.0-alpha.11"
   },
   "volta": {
     "node": "12.18.0",

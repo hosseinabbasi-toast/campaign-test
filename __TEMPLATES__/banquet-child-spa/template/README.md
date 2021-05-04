@@ -1,25 +1,73 @@
 # banquet-child-spa
 
-A banquet-child-spa is designed to be loaded by either the banquet-root-config or a banquet-layout spa.
+A banquet-child-spa is designed to be loaded by a banquet-layout eg <https://github.com/toasttab/restaurant-admin-layout>
 Ideally it should not have child SPAs of it own, but this is a convention rather than a technical limitation.
 
-## Best practices
+## How to register a SPA
 
+Once you've created you SPA via the `banquet-frontend-spa-template` you need to register it with Banquet.
+
+1. Clone the <https://github.com/toasttab/wex-banquet-root>
+2. If you have not registered you spa in the `manifest.json`, please do now. In the `src/static/manifest.json` file register your new SPA.
+
+```js
+  {
+    "name": "your-spa-name", // Must match this repos package.json
+    "src": "app.banquet.js",
+    "cssPath": "main.css",
+    "prodReady": false // Set to true when you want to release your SPA to production.
+  }
+```
+
+3. Assuming your SPA is a child with a base path of `/restaurants/admin/`, you will need to add your SPA to `src/registration/restaurant-admin.ts` the layoutPath array. This array is passed into the `restaurant-admin-layout` SPA registration function. This tells the layout to mount at this route, later, we will add a `BanquetLoader` to mount your SPA at the same route.
+
+```js
+   const layoutPaths = [
+    '/restaurants/admin/<your_path_here>',
+    '/restaurants/admin/home',
+    '/restaurants/admin/:id/homepage',
+    '/restaurants/admin/integrations',
+    '/restaurants/admin/integrations/*',
+    '/restaurants/admin/toast-account/*'
+   ...
+   ]
+```
+
+4. Clone <https://github.com/toasttab/restaurant-admin-layout> This is a Banquet layout SPA, it is a react application, within its App.js you will find a react-router setup. This is where you tell your SPA to mount via the a `BanquetLoader`.
+
+```jsx
+      <Route path='/<your_path_here>' exact> 
+        <SpaContainer name='<your-spa-name>' /> 
+      </Route>
+```
+
+Note: `<SpaContainer>` wraps a `BanquetLoader`, this will change in upcoming release, yes, its confusing :)
+
+5. At this point you should have the following, a new spa that you can run locally. An open PR against the `wex-banquet-root` where you have added a path to the layout engine you wish to use. A PR against the layout SPA you wish to load your SPA into.
+
+## Developing a child SPA inside of a banquet layout SPA
+
+Banquet V2 offers an excellent set of tools for SPA development, these tools allow for the development of SPA within dev, or directly within pre-production.
+### How to develop in your local dev environment.
+
+If you haven't merged your `wex-banquet-root` changes, you will need to run it, `restaurant-admin-layout` and your SPA locally. When you start each of these SPA, they will create a import-map-override file inside of the toastweb public folder. When you start toastweb locally these files are read by banquet and override the CDN versions of these files. You should now be able to make changes to any of these files and see the changes update automatically in your browser.
+
+You may need to delete this file if you no long require it to be overridden.
+`toastweb/public/temp-import-map-overrides/wex-banquet-root-import-map.json`
+
+In `dev` and `preprod` you can run `importMapOverrides.enableUI()` this will enable a tool that gives you visibility of the SPAs currently being overridden, along with a bunch of other great features.
+
+### How to develop in live in preprod environment
+
+This is a great option if your making purely frontend changes.
+
+   1. Start the tooling by running the following command in your browser terminal `importMapOverrides.enableUI()`
+   2. Override any SPAs that are not currently released to preprod, in this case, override `wex-banquet-root` with your locally running version running at `https://dev.eng.toastteam.com:9990/bundle.js` ( port may differ ) `restaurant-admin-layout` `https://dev.eng.toastteam.com:9991/bundle.js` and your new SPA `https://dev.eng.toastteam.com:9992/bundle.js`. Its probably worth getting `wex-banquet-root` and `restaurant-admin-layout` merged and released adhoc on preprod as soon as possible, but the above approach will allow you to develop in preprod immediately.
+
+
+## Best practices
+    
 - Avoid adding routers to child SPA where possible. Ideally they represent an single screen.
 - Load child SPAs into layout-spas using the BanquetLoader package.
 - If you need to load your SPA as into legacy pages consider using the Widget SPA template.
-
-## Adding a child spa to a banquet-layout
-
-Child SPAs are designed to be loaded via the BanquetLoader component. <https://github.com/toasttab/banquet-tools/blob/develop/packages/banquet-loader/BanquetLoader/README.story.mdx>
-It is a thin wrapper around the <https://single-spa.js.org/docs/ecosystem-react#parcels>, It uses the `name` prop to resolve the correct bundle in the `import-map` and loads it. 
-
-```jsx
-// Basic usage
-<BanquetLoader name={name} />
-```
-
-Any properties passed to BanquetLoader are available in the `App.jsx` of the loaded SPA
-
-## Registering a child SPA  
 

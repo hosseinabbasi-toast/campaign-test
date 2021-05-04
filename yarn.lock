@@ -684,19 +684,19 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
-"@toasttab/banquet-cli@^0.2.0-alpha.5":
-  version "0.2.0-alpha.5"
-  resolved "https://nexus.eng.toasttab.com/repository/toast_npm/@toasttab/banquet-cli/-/banquet-cli-0.2.0-alpha.5.tgz#37e56259f06143e17a0ce2bfa30ca02232dfc1a5"
-  integrity sha512-ujttv9cCO3tTLWNf9TXZflF+hUxkgirQhuq/pgmnOA9uwhwTuSxgCPa8kmrV0tay+hErVUsbT673pj/0VEzi8g==
+"@toasttab/banquet-cli@^0.2.0-alpha.11":
+  version "0.2.0-alpha.11"
+  resolved "https://nexus.eng.toasttab.com/repository/toast_npm/@toasttab/banquet-cli/-/banquet-cli-0.2.0-alpha.11.tgz#180d6aa0a6c28adba95a2fdb47a3bdb02a3ac6e3"
+  integrity sha512-+4QPDWZfrQyf7A5SH2cXdINaLOXy5XgIqGa/NlcKc/e2cfAWJheY5iZFjJRaRRIXfuVx67qBI/rLVKvuriU9ig==
   dependencies:
     "@babel/core" "^7.12.10"
     "@oclif/command" "^1"
     "@oclif/config" "^1"
     "@oclif/plugin-help" "^2"
     "@pmmmwh/react-refresh-webpack-plugin" "0.5.0-beta.0"
-    "@toasttab/banquet-webpack" "^0.2.0-alpha.1"
-    "@toasttab/copy-template" "^0.1.1-alpha.0"
-    "@toasttab/webpack-importmap-dev-override-plugin" "^0.1.1-alpha.1"
+    "@toasttab/banquet-webpack" "^0.2.0-alpha.2"
+    "@toasttab/copy-template" "^0.1.1-alpha.1"
+    "@toasttab/webpack-importmap-dev-override-plugin" "^0.1.1-alpha.2"
     "@types/express" "^4.17.11"
     "@types/opn" "^5.5.0"
     "@types/webpack" "^4.41.26"
@@ -729,15 +729,17 @@
     webpack-dev-server "3.11.2"
     webpack-hot-middleware "^2.25.0"
     webpack-merge "^5.7.3"
+    write-json-file "^4.3.0"
 
-"@toasttab/banquet-webpack@^0.2.0-alpha.1":
-  version "0.2.0-alpha.1"
-  resolved "https://nexus.eng.toasttab.com/repository/toast_npm/@toasttab/banquet-webpack/-/banquet-webpack-0.2.0-alpha.1.tgz#a2e0c23728ca6b7f1c1037373fddff2cf2dc652b"
-  integrity sha512-YsnmbkxJ9A/mOE5C1oanrTU3gok7z3R+dzE3hWt+M2G4aR0FzdFPY08zlLQkppbVdjvZ5Kl3xKcICpuf7RWTew==
+"@toasttab/banquet-webpack@^0.2.0-alpha.2":
+  version "0.2.0-alpha.2"
+  resolved "https://nexus.eng.toasttab.com/repository/toast_npm/@toasttab/banquet-webpack/-/banquet-webpack-0.2.0-alpha.2.tgz#7a16725ea2ce266c2014cbead8ab84fcdfa7893e"
+  integrity sha512-kq1s+qy4WQ3J1qKHQ9neCGuEX1zxYgxJwck7pi5xHlC48cXfAY/cFQIzhpXrYh2u7j3afvy//43d25yYxOQciQ==
   dependencies:
-    "@toasttab/webpack-importmap-dev-override-plugin" "^0.1.1-alpha.1"
+    "@toasttab/webpack-importmap-dev-override-plugin" "^0.1.1-alpha.2"
     babel-loader "^8.2.2"
     clean-webpack-plugin "^3.0.0"
+    copy-webpack-plugin "^6.4.1"
     css-loader "^5.0.1"
     css-minimizer-webpack-plugin "^1.2.0"
     file-loader "^6.2.0"
@@ -760,10 +762,10 @@
     url-loader "^4.1.1"
     webpack-bundle-analyzer "^4.4.0"
 
-"@toasttab/copy-template@^0.1.1-alpha.0":
-  version "0.1.1-alpha.0"
-  resolved "https://nexus.eng.toasttab.com/repository/toast_npm/@toasttab/copy-template/-/copy-template-0.1.1-alpha.0.tgz#2c8ffb14782b40d34d4b666d7f9f9891f97aecfc"
-  integrity sha512-FGMzgXNNKUbrEWQkCRhwEGlyHPH1f8Ed7I7b5aU7DRwBoTr++Ww33ixeElurb5XaMgi5OO77c1sSquIf4bh/HQ==
+"@toasttab/copy-template@^0.1.1-alpha.1":
+  version "0.1.1-alpha.1"
+  resolved "https://nexus.eng.toasttab.com/repository/toast_npm/@toasttab/copy-template/-/copy-template-0.1.1-alpha.1.tgz#be115266e866bcc8b2a24cbc1cd92030b0626d32"
+  integrity sha512-lY/hANTFvCV4+HxJ/6PjrzMcSpm2+JeVB54vTHiCgR8HJ2MgRdfhNfrAm30S4Z/wsVorY7AvjerTOJGJcV5AHA==
   dependencies:
     copy-template-dir "^1.4.0"
 
@@ -786,12 +788,12 @@
     lodash.get "^4.4.2"
     prettier "^1.19.1"
 
-"@toasttab/webpack-importmap-dev-override-plugin@^0.1.1-alpha.1":
-  version "0.1.1-alpha.1"
-  resolved "https://nexus.eng.toasttab.com/repository/toast_npm/@toasttab/webpack-importmap-dev-override-plugin/-/webpack-importmap-dev-override-plugin-0.1.1-alpha.1.tgz#f66e2224771de358b34f6915d3daa87b3f2d686b"
-  integrity sha512-MfJlQY3lATccL7KKvAOfVsqQYT6sn3VsWsY1R0AHxbmV9b8zk872V8QuQ1Ne9D/4sevUDAPqpuXVABhXSpR9lQ==
+"@toasttab/webpack-importmap-dev-override-plugin@^0.1.1-alpha.2":
+  version "0.1.1-alpha.2"
+  resolved "https://nexus.eng.toasttab.com/repository/toast_npm/@toasttab/webpack-importmap-dev-override-plugin/-/webpack-importmap-dev-override-plugin-0.1.1-alpha.2.tgz#7391f8fa2245241efd3050763248278d1a3219dd"
+  integrity sha512-Lp2TPj6bmSNw4Kz1SlT7fGl0yNYM8vMQrAE5Bro8dzIqq1I+VeW99N+i0SUvI+AGCigFo4qQab4FDPMijVkylg==
   dependencies:
-    "@toasttab/banquet-webpack" "^0.2.0-alpha.1"
+    "@toasttab/banquet-webpack" "^0.2.0-alpha.2"
     "@types/fs-extra" "^9.0.6"
     chalk "^4.1.0"
     fs-extra "^9.1.0"
@@ -2542,6 +2544,23 @@ copy-template-dir@^1.4.0:
     readdirp "^2.0.0"
     run-parallel "^1.1.4"
 
+copy-webpack-plugin@^6.4.1:
+  version "6.4.1"
+  resolved "https://nexus.eng.toasttab.com/repository/toast_npm/copy-webpack-plugin/-/copy-webpack-plugin-6.4.1.tgz#138cd9b436dbca0a6d071720d5414848992ec47e"
+  integrity sha512-MXyPCjdPVx5iiWyl40Va3JGh27bKzOTNY3NjUTrosD2q7dR/cLD0013uqJ3BpFbUjyONINjb6qI7nDIJujrMbA==
+  dependencies:
+    cacache "^15.0.5"
+    fast-glob "^3.2.4"
+    find-cache-dir "^3.3.1"
+    glob-parent "^5.1.1"
+    globby "^11.0.1"
+    loader-utils "^2.0.0"
+    normalize-path "^3.0.0"
+    p-limit "^3.0.2"
+    schema-utils "^3.0.0"
+    serialize-javascript "^5.0.1"
+    webpack-sources "^1.4.3"
+
 core-js-pure@^3.0.0:
   version "3.10.1"
   resolved "https://nexus.eng.toasttab.com/repository/toast_npm/core-js-pure/-/core-js-pure-3.10.1.tgz#28642697dfcf02e0fd9f4d9891bd03a22df28ecf"
@@ -3061,6 +3080,11 @@ destroy@~1.0.4:
   version "1.0.4"
   resolved "https://nexus.eng.toasttab.com/repository/toast_npm/destroy/-/destroy-1.0.4.tgz#978857442c44749e4206613e37946205826abd80"
   integrity sha1-l4hXRCxEdJ5CBmE+N5RiBYJqvYA=
+
+detect-indent@^6.0.0:
+  version "6.0.0"
+  resolved "https://nexus.eng.toasttab.com/repository/toast_npm/detect-indent/-/detect-indent-6.0.0.tgz#0abd0f549f69fc6659a254fe96786186b6f528fd"
+  integrity sha512-oSyFlqaTHCItVRGK5RmrmjB+CmaMOW7IaNA/kdxqhoa6d17j/5ce9O9eWXmV/KEdRwqpQA+Vqe8a8Bsybu4YnA==
 
 detect-newline@^3.0.0:
   version "3.1.0"
@@ -3802,7 +3826,7 @@ fast-glob@^2.2.6:
     merge2 "^1.2.3"
     micromatch "^3.1.10"
 
-fast-glob@^3.1.1:
+fast-glob@^3.1.1, fast-glob@^3.2.4:
   version "3.2.5"
   resolved "https://nexus.eng.toasttab.com/repository/toast_npm/fast-glob/-/fast-glob-3.2.5.tgz#7939af2a656de79a4f1901903ee8adcaa7cb9661"
   integrity sha512-2DtFcgT68wiTTiwZ2hNdJfcHNke9XOfnwmBRWXhmeKM8rF0TGwmC/Qto3S7RoZKp5cilZbxzO5iTNTQsJ+EeDg==
@@ -4141,6 +4165,13 @@ glob-parent@^5.1.0, glob-parent@~5.1.0:
   version "5.1.1"
   resolved "https://nexus.eng.toasttab.com/repository/toast_npm/glob-parent/-/glob-parent-5.1.1.tgz#b6c1ef417c4e5663ea498f1c45afac6916bbc229"
   integrity sha512-FnI+VGOpnlGHWZxthPGR+QhR78fuiK0sNLkHQv+bL9fQi57lNNdquIbna/WrfROrolq8GK5Ek6BiMwqL/voRYQ==
+  dependencies:
+    is-glob "^4.0.1"
+
+glob-parent@^5.1.1:
+  version "5.1.2"
+  resolved "https://nexus.eng.toasttab.com/repository/toast_npm/glob-parent/-/glob-parent-5.1.2.tgz#869832c58034fe68a4093c17dc15e8340d8401c4"
+  integrity sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==
   dependencies:
     is-glob "^4.0.1"
 
@@ -4889,6 +4920,11 @@ is-path-inside@^3.0.2:
   version "3.0.2"
   resolved "https://nexus.eng.toasttab.com/repository/toast_npm/is-path-inside/-/is-path-inside-3.0.2.tgz#f5220fc82a3e233757291dddc9c5877f2a1f3017"
   integrity sha512-/2UGPSgmtqwo1ktx8NDHjuPwZWmHhO+gj0f93EkhLB5RgW9RZevWYYlIkS6zePc6U2WpOdQYIwHe9YC4DWEBVg==
+
+is-plain-obj@^2.0.0:
+  version "2.1.0"
+  resolved "https://nexus.eng.toasttab.com/repository/toast_npm/is-plain-obj/-/is-plain-obj-2.1.0.tgz#45e42e37fccf1f40da8e5f76ee21515840c09287"
+  integrity sha512-YWnfyRwxL/+SsrWYfOpUtz5b3YD+nyfkHvjbcanzk8zgyO4ASD67uVMRt8k5bM4lLMDnXfriRhOpemw+NfT1eA==
 
 is-plain-object@^2.0.3, is-plain-object@^2.0.4:
   version "2.0.4"
@@ -8465,6 +8501,13 @@ sockjs@^0.3.21:
     uuid "^3.4.0"
     websocket-driver "^0.7.4"
 
+sort-keys@^4.0.0:
+  version "4.2.0"
+  resolved "https://nexus.eng.toasttab.com/repository/toast_npm/sort-keys/-/sort-keys-4.2.0.tgz#6b7638cee42c506fff8c1cecde7376d21315be18"
+  integrity sha512-aUYIEU/UviqPgc8mHR6IW1EGxkAXpeRETYcrzg8cLAvUPZcpAlleSXHV2mY7G12GphSH6Gzv+4MMVSSkbdteHg==
+  dependencies:
+    is-plain-obj "^2.0.0"
+
 source-list-map@^2.0.0:
   version "2.0.1"
   resolved "https://nexus.eng.toasttab.com/repository/toast_npm/source-list-map/-/source-list-map-2.0.1.tgz#3993bd873bfc48479cca9ea3a547835c7c154b34"
@@ -9745,6 +9788,18 @@ write-file-atomic@^3.0.0:
     is-typedarray "^1.0.0"
     signal-exit "^3.0.2"
     typedarray-to-buffer "^3.1.5"
+
+write-json-file@^4.3.0:
+  version "4.3.0"
+  resolved "https://nexus.eng.toasttab.com/repository/toast_npm/write-json-file/-/write-json-file-4.3.0.tgz#908493d6fd23225344af324016e4ca8f702dd12d"
+  integrity sha512-PxiShnxf0IlnQuMYOPPhPkhExoCQuTUNPOa/2JWCYTmBquU9njyyDuwRKN26IZBlp4yn1nt+Agh2HOOBl+55HQ==
+  dependencies:
+    detect-indent "^6.0.0"
+    graceful-fs "^4.1.15"
+    is-plain-obj "^2.0.0"
+    make-dir "^3.0.0"
+    sort-keys "^4.0.0"
+    write-file-atomic "^3.0.0"
 
 ws@^6.2.1:
   version "6.2.1"
