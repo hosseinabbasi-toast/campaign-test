@@ -1,62 +1,21 @@
 {
   "name": "banquet-frontend-template-spa",
   "version": "1.0.0-SNAPSHOT",
-  "main": "index.js",
   "license": "UNLICENSED",
   "scripts": {
-    "start": "banquet start",
-    "dev": "yarn start",
-    "build": "banquet build",
-    "analyze": "banquet analyze",
-    "test": "banquet test",
-    "watch": "banquet test --watch",
-    "coverage": "banquet test --coverage",
-    "storybook": "start-storybook -p 6006"
+    "create": "banquet create && code ./README.md"
   },
   "private": true,
   "workspaces": [
-    "packages/*",
-    "../buffet/packages/buffet-pui/*",
-    "../banquet-tools/packages/banquet-cli",
-    "../banquet-tools/packages/banquet-webpack"
+    "packages/*"
   ],
   "devDependencies": {
-    "@toasttab/eslint-plugin-toast": "^1.2.0",
-    "@toasttab/toast-babel": "^0.1.0-alpha.0",
-    "@types/jest": "^26.0.0",
-    "@types/react": "^16.9.23",
-    "@types/testing-library__react": "^9.1.3",
-    "classnames": "^2.2.5",
-    "eslint": "^6.8.0",
-    "husky": "^4.2.5",
-    "lerna": "^3.20.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
-  },
-  "dependencies": {
-    "@toasttab/banquet-cli": "0.2.0-alpha.0",
-    "@toasttab/banquet-single-spa-react": "0.2.0-alpha.0",
-    "@toasttab/buffet-pui-buttons": "1.0.0-alpha.4",
-    "@toasttab/buffet-pui-checkbox": "1.0.0-alpha.2",
-    "@toasttab/buffet-pui-icons": "2.0.0-alpha.0",
-    "@toasttab/buffet-pui-styles": "1.0.0-alpha.4",
-    "@toasttab/error-boundary": "^0.1.1",
-    "babel-plugin-macros": "^3.0.1",
-    "twin.macro": "^2.2.3"
-  },
-  "babelMacros": {
-    "twin": {
-      "preset": "emotion"
-    }
+    "@toasttab/eslint-plugin-toast": "^1.3.0",
+    "@toasttab/banquet-cli": "^0.2.0-alpha.11"
   },
   "volta": {
     "node": "12.18.0",
     "yarn": "1.22.0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-push": "yarn test"
-    }
   },
   "prettier": {
     "semi": false,

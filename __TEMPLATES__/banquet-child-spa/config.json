@@ -1,0 +1,22 @@
+{
+  "name": "banquet-child-spa",
+  "version": "1",
+  "hint": "Child SPAs are the default banquet SPA type",
+  "props": [
+    {
+      "name": "name",
+      "message": "SPA name",
+      "hint": "Prefix with your teams name and use kebab-case, eg. wex-example-spa"
+    },
+    {
+      "name": "cssScope",
+      "message": "CSS scope",
+      "hint": "Prefix with your teams name and a short version of the spa name eg. wex-es"
+    },
+    {
+      "name": "channel",
+      "message": "Slack channel",
+      "hint": "A slack team alert channel eg. #wex-dev-alerts"
+    }
+  ]
+}

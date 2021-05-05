@@ -1,0 +1,27 @@
+{
+  "name": "banquet-widget-spa",
+  "version": "1",
+  "hint": "Widget SPAs for multi page overlay features",
+  "props": [
+    {
+      "name": "name",
+      "message": "SPA name",
+      "hint": "Prefix with your teams name and use kebab-case, eg. wex-example-spa"
+    },
+    {
+      "name": "cssScope",
+      "message": "CSS scope",
+      "hint": "Prefix with your teams name and a short version of the spa name eg. wex-es"
+    },
+    {
+      "name": "channel",
+      "message": "Slack channel",
+      "hint": "A slack team alert channel eg. #wex-dev-alerts"
+    },
+    {
+      "name": "spaMountPointId",
+      "message": "Mount point id",
+      "hint": "The id of the html element, you wish to mount the widget into"
+    }
+  ]
+}

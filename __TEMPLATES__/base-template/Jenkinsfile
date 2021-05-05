@@ -5,5 +5,5 @@
 singlePageAppBuild {
   unifiedVersioning = true
   notify = true
-  channel = '#wex-dev-alerts'
+  channel = '{{channel}}'
 }
