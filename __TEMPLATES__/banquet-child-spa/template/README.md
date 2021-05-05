@@ -19,18 +19,15 @@ Once you've created you SPA via the `banquet-frontend-spa-template` you need to 
   }
 ```
 
-3. Assuming your SPA is a child with a base path of `/restaurants/admin/`, you will need to add your SPA to `src/registration/restaurant-admin.ts` the layoutPath array. This array is passed into the `restaurant-admin-layout` SPA registration function. This tells the layout to mount at this route, later, we will add a `BanquetLoader` to mount your SPA at the same route.
+3. Assuming your SPA is a child with a base path of `/restaurants/admin/`, you will need to add your SPA to `src/registration/restaurant-admin.ts` the restaurantAdminMatch array. This array is passed into the `restaurant-admin-layout` SPA registration function. This tells the layout to mount at this route, later, we will add a `BanquetLoader` to mount your SPA at the same route.
 
 ```js
-   const layoutPaths = [
+  const restaurantAdminMatch = routeMatcher([
     '/restaurants/admin/<your_path_here>',
     '/restaurants/admin/home',
     '/restaurants/admin/:id/homepage',
-    '/restaurants/admin/integrations',
-    '/restaurants/admin/integrations/*',
-    '/restaurants/admin/toast-account/*'
-   ...
-   ]
+    ...
+  ])
 ```
 
 4. Clone <https://github.com/toasttab/restaurant-admin-layout> This is a Banquet layout SPA, it is a react application, within its App.js you will find a react-router setup. This is where you tell your SPA to mount via the a `BanquetLoader`.
@@ -48,7 +45,8 @@ Note: `<SpaContainer>` wraps a `BanquetLoader`, this will change in upcoming rel
 ## Developing a child SPA inside of a banquet layout SPA
 
 Banquet V2 offers an excellent set of tools for SPA development, these tools allow for the development of SPA within dev, or directly within pre-production.
-### How to develop in your local dev environment.
+
+### How to develop in your local dev environment
 
 If you haven't merged your `wex-banquet-root` changes, you will need to run it, `restaurant-admin-layout` and your SPA locally. When you start each of these SPA, they will create a import-map-override file inside of the toastweb public folder. When you start toastweb locally these files are read by banquet and override the CDN versions of these files. You should now be able to make changes to any of these files and see the changes update automatically in your browser.
 
