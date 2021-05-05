@@ -33,7 +33,7 @@ Once you've created you SPA via the `banquet-frontend-spa-template` you need to 
 4. Pull the latest <https://github.com/toasttab/restaurant-admin-layout>. This is a Banquet layout SPA, it is a react application, within its App.js you will find a react-router setup. This is where you tell your SPA to mount via a `BanquetLoader`.
 
 ```jsx
-      <Route path='/<your_path_here>' exact> 
+      <Route path='/<your_path_here>'> 
         <SpaContainer name='<your-spa-name>' /> 
       </Route>
 ```
