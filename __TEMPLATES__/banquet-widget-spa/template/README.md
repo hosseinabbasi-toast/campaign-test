@@ -78,4 +78,4 @@ This is a great option if your making purely frontend changes.
 
 - Never add routers to widget SPA. Ideally they represent a single screen.
 - Mount widget SPAs via RegisterApplication in wex-banquet-root.
-- If using with layout, follow the "modes" pattern.
+- If using with layout, follow the "modes" pattern. <https://github.com/toasttab/wex-left-rail-spa/blob/a6de891c2ff5cdf6a44d35266872a5273d3e16d3/src/components/App/App.jsx#L45>
