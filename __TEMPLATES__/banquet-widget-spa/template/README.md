@@ -1,6 +1,6 @@
 # banquet-widget-spa
 
-A `banquet-widget-spa` is a SPA that can be mounted on any page across Toastweb, it primarily used for elements that exist outside of the pages layout.
+A `banquet-widget-spa` is a SPA that can be mounted on any page across Toastweb, it is primarily used for elements that exist outside of page-specific layouts
 
 Current examples include:
 
@@ -8,16 +8,10 @@ Current examples include:
 - <https://github.com/toasttab/toast-onboarding-checklist-spa>
 - <https://github.com/toasttab/spa-customer-sessions>
 
-<<<<<<< HEAD
-In general Widgets are mounted at the root level in `wex-banquet-root` rather than inside of a layout spa via a BanquetLoader. It is possible to do so, an example being `wex-left-rail-spa` which uses a "modes" pattern to render a version of `wex-left-rail-spa` onto the home page in its "search-bar mode".
-
-When defining the paths for a widget spa, you may choose to list the paths it does not exist upon. It is also common to use the domElementGetter function to control the mount position of the widget SPA. This only effects SPAs mounted via the RegisterApplication function and not BanquetLoader mounted SPAs.
-=======
 In general Widgets are mounted at the root level in `wex-banquet-root` rather than inside of a BanquetLoader. It is possible to do so, an example being `wex-left-rail-spa` which uses a "modes" pattern, to render a version of `wex-left-rail-spa` which contains the search bar onto the home page.
 
 When defining the paths for a widget spa, you may choose to list the paths it does not exist upon. It is also common to use the domElementGetter function
 to control the mount position of the widget SPA. This only effects SPAs mounted via the RegisterApplication function and not BanquetLoader mounted SPAs.
->>>>>>> fcf9849... chore: added a second template
 
 ```js
 const lifecycles = banquetSingleSpaReact({
@@ -77,11 +71,11 @@ In `dev` and `preprod` you can run `importMapOverrides.enableUI()` this will ena
 
 This is a great option if your making purely frontend changes.
 
-   1. Start the tooling by running the following command in your browser terminal `importMapOverrides.enableUI()`
+   1. Start the tooling by running the following command in your browser's devtools console `importMapOverrides.enableUI()`
    2. Override any SPAs that are not currently released to preprod, in this case, override `wex-banquet-root` with your locally running version running at `https://dev.eng.toastteam.com:9990/bundle.js` ( port may differ ) and your new SPA `https://dev.eng.toastteam.com:9991/bundle.js`. Its probably worth getting `wex-banquet-root` merged and released adhoc on preprod as soon as possible, but the above approach will allow you to develop in preprod immediately.
 
 ## Best practices
 
-- Never add routers to widget SPA. Ideally they represent an single screen.
+- Never add routers to widget SPA. Ideally they represent a single screen.
 - Mount widget SPAs via RegisterApplication in wex-banquet-root.
 - If using with layout, follow the "modes" pattern.

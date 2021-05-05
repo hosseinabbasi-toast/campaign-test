@@ -19,7 +19,7 @@ A base template provides a foundation for all the other templates providing a se
 
 - banquet-dynamic-ui-spa
 
-A spa designed used in a user controlled layout.
+A spa designed for use in a user-controlled layout.
 
 ## Setup
 
@@ -39,7 +39,7 @@ Step 2: Inside the new template folder edit the config.json
 }
 ```
 
-The props names become mustache variables, when in the init command is run the user will fill this values out in the CLI. In the /template folder inside you newly duplicated template folder you can apply these in any file by using the Mustache templating format `{{mustache}}`
+The props' names become mustache variables. When the init command is run the user will fill these values out in the CLI. In the `/template` folder inside you newly duplicated template folder you can apply these in any file by using the Mustache templating format `{{mustache}}`
 
 ```js
   cssScope: '{{cssScope}}',

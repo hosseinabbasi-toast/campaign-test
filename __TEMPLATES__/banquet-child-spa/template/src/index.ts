@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { App } from 'App'
+import { App } from './app/App'
 import { banquetSingleSpaReact } from '@toasttab/banquet-single-spa-react'
 import './index.css'
 
