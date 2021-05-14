@@ -42,14 +42,3 @@ if (global.document && !document.createRange) {
     }
   })
 }
-
-jest.mock('@toasttab/banquet-hooks', () => {
-  return {
-    useBanquetCustomProps: () => {
-      return {
-        isOnReactPage: true,
-        basename: '/restaurants/admin'
-      }
-    }
-  }
-})
