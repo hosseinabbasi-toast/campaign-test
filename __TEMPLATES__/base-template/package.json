@@ -16,8 +16,7 @@
   },
   "private": true,
   "workspaces": [
-    "packages/*",
-    "../banquet-tools/packages/*"
+    "packages/*"
   ],
   "devDependencies": {
     "@toasttab/banquet-cli": "^0.2.0-alpha.1",
