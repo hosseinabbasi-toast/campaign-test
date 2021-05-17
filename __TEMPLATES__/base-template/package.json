@@ -19,7 +19,7 @@
     "packages/*"
   ],
   "devDependencies": {
-    "@toasttab/banquet-cli": "^0.2.0-alpha.1",
+    "@toasttab/banquet-cli": "next",
     "@toasttab/toast-babel": "^0.1.0",
     "@toasttab/eslint-plugin-toast": "^1.2.0",
     "@types/jest": "^26.0.0",
