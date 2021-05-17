@@ -39,17 +39,6 @@
     "@toasttab/buffet-pui-styles": "1.0.0-alpha.4",
     "@toasttab/error-boundary": "^0.1.1"
   },
-  "banquet": {
-    "template": "{{templateName}}",
-    "version": "{{templateVersion}}",
-    "cssScope": "{{cssScope}}",
-    "storybook": {
-      "stories": [
-        "src/**/*.story.@(js|jsx|ts|tsx|mdx)",
-        "packages/**/*.story.@(js|jsx|ts|tsx|mdx)"
-      ]
-    }
-  },
   "volta": {
     "node": "12.18.0",
     "yarn": "1.22.0"
