@@ -11,7 +11,7 @@
   ],
   "devDependencies": {
     "@toasttab/eslint-plugin-toast": "^1.3.0",
-    "@toasttab/banquet-cli": "^0.2.0-alpha.13"
+    "@toasttab/banquet-cli": "next"
   },
   "volta": {
     "node": "12.18.0",

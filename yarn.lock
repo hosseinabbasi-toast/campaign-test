@@ -684,19 +684,20 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
-"@toasttab/banquet-cli@^0.2.0-alpha.11":
-  version "0.2.0-alpha.11"
-  resolved "https://nexus.eng.toasttab.com/repository/toast_npm/@toasttab/banquet-cli/-/banquet-cli-0.2.0-alpha.11.tgz#180d6aa0a6c28adba95a2fdb47a3bdb02a3ac6e3"
-  integrity sha512-+4QPDWZfrQyf7A5SH2cXdINaLOXy5XgIqGa/NlcKc/e2cfAWJheY5iZFjJRaRRIXfuVx67qBI/rLVKvuriU9ig==
+"@toasttab/banquet-cli@next":
+  version "0.2.0-alpha.23"
+  resolved "https://nexus.eng.toasttab.com/repository/toast_npm/@toasttab/banquet-cli/-/banquet-cli-0.2.0-alpha.23.tgz#87c0d6567b1ca9716864c471d737e682d9e2bf42"
+  integrity sha512-3tVJkYkQOPTnkPQf3MVv1aURkxRZAhKxG/Rp1hvmr6BtyNryPAnkAkdCv551ak0vZx7CZXTcWE6D2j3caST1Rg==
   dependencies:
     "@babel/core" "^7.12.10"
     "@oclif/command" "^1"
     "@oclif/config" "^1"
     "@oclif/plugin-help" "^2"
     "@pmmmwh/react-refresh-webpack-plugin" "0.5.0-beta.0"
-    "@toasttab/banquet-webpack" "^0.2.0-alpha.2"
-    "@toasttab/copy-template" "^0.1.1-alpha.1"
-    "@toasttab/webpack-importmap-dev-override-plugin" "^0.1.1-alpha.2"
+    "@toasttab/banquet-webpack" "^0.2.0-alpha.8"
+    "@toasttab/copy-template" "^0.1.1-alpha.6"
+    "@toasttab/webpack-importmap-dev-override-plugin" "^0.1.1-alpha.8"
+    "@types/execa" "^2.0.0"
     "@types/express" "^4.17.11"
     "@types/opn" "^5.5.0"
     "@types/webpack" "^4.41.26"
@@ -708,6 +709,7 @@
     chalk "^4.1.0"
     cpy "^8.1.1"
     del "^6.0.0"
+    dotenv "^9.0.2"
     enquirer "^2.3.6"
     execa "^5.0.0"
     express "^4.17.1"
@@ -731,12 +733,12 @@
     webpack-merge "^5.7.3"
     write-json-file "^4.3.0"
 
-"@toasttab/banquet-webpack@^0.2.0-alpha.2":
-  version "0.2.0-alpha.2"
-  resolved "https://nexus.eng.toasttab.com/repository/toast_npm/@toasttab/banquet-webpack/-/banquet-webpack-0.2.0-alpha.2.tgz#7a16725ea2ce266c2014cbead8ab84fcdfa7893e"
-  integrity sha512-kq1s+qy4WQ3J1qKHQ9neCGuEX1zxYgxJwck7pi5xHlC48cXfAY/cFQIzhpXrYh2u7j3afvy//43d25yYxOQciQ==
+"@toasttab/banquet-webpack@^0.2.0-alpha.8":
+  version "0.2.0-alpha.8"
+  resolved "https://nexus.eng.toasttab.com/repository/toast_npm/@toasttab/banquet-webpack/-/banquet-webpack-0.2.0-alpha.8.tgz#319c1d5d45eaec02df279603703e0c14135445a5"
+  integrity sha512-gAsx1RFiE/rjQDPOkA8U/n/3BGakGxpJNHaeO594A3+J+SaYI5er0IbKeCPaGXfqZV7RKnBh5ngkwU9nnQjSGQ==
   dependencies:
-    "@toasttab/webpack-importmap-dev-override-plugin" "^0.1.1-alpha.2"
+    "@toasttab/webpack-importmap-dev-override-plugin" "^0.1.1-alpha.8"
     babel-loader "^8.2.2"
     clean-webpack-plugin "^3.0.0"
     copy-webpack-plugin "^6.4.1"
@@ -762,10 +764,10 @@
     url-loader "^4.1.1"
     webpack-bundle-analyzer "^4.4.0"
 
-"@toasttab/copy-template@^0.1.1-alpha.1":
-  version "0.1.1-alpha.1"
-  resolved "https://nexus.eng.toasttab.com/repository/toast_npm/@toasttab/copy-template/-/copy-template-0.1.1-alpha.1.tgz#be115266e866bcc8b2a24cbc1cd92030b0626d32"
-  integrity sha512-lY/hANTFvCV4+HxJ/6PjrzMcSpm2+JeVB54vTHiCgR8HJ2MgRdfhNfrAm30S4Z/wsVorY7AvjerTOJGJcV5AHA==
+"@toasttab/copy-template@^0.1.1-alpha.6":
+  version "0.1.1-alpha.6"
+  resolved "https://nexus.eng.toasttab.com/repository/toast_npm/@toasttab/copy-template/-/copy-template-0.1.1-alpha.6.tgz#d3298b32b670fe6d2aa4b5b09fc5fbf2b6f72b22"
+  integrity sha512-4SCk8ukTxalFiAgBKMYL48XgE2UhwPxEoWAoHmdBqPyE03k2FH4Ou5obiJXnvKnOv7DS2rDG1VhQ1atsmFwZig==
   dependencies:
     copy-template-dir "^1.4.0"
 
@@ -788,12 +790,12 @@
     lodash.get "^4.4.2"
     prettier "^1.19.1"
 
-"@toasttab/webpack-importmap-dev-override-plugin@^0.1.1-alpha.2":
-  version "0.1.1-alpha.2"
-  resolved "https://nexus.eng.toasttab.com/repository/toast_npm/@toasttab/webpack-importmap-dev-override-plugin/-/webpack-importmap-dev-override-plugin-0.1.1-alpha.2.tgz#7391f8fa2245241efd3050763248278d1a3219dd"
-  integrity sha512-Lp2TPj6bmSNw4Kz1SlT7fGl0yNYM8vMQrAE5Bro8dzIqq1I+VeW99N+i0SUvI+AGCigFo4qQab4FDPMijVkylg==
+"@toasttab/webpack-importmap-dev-override-plugin@^0.1.1-alpha.8":
+  version "0.1.1-alpha.8"
+  resolved "https://nexus.eng.toasttab.com/repository/toast_npm/@toasttab/webpack-importmap-dev-override-plugin/-/webpack-importmap-dev-override-plugin-0.1.1-alpha.8.tgz#a9543a790a35e06d76a06bb2c4e0841e6dd58d6d"
+  integrity sha512-hkzsm1wMedE8jrUqWQ6mwUGvTsI4Md73MfJmVfD23Fj0AALgZ/R5tdcb3Qk8FR8ymtfXlEXw0qgPCSH0pjkGUA==
   dependencies:
-    "@toasttab/banquet-webpack" "^0.2.0-alpha.2"
+    "@toasttab/banquet-webpack" "^0.2.0-alpha.8"
     "@types/fs-extra" "^9.0.6"
     chalk "^4.1.0"
     fs-extra "^9.1.0"
@@ -852,6 +854,13 @@
   integrity sha512-ePPA/JuI+X0vb+gSWlPKOY0NdNAie/rPUqX2GUPpbZwiKTkSPhjXWuee47E4MtE54QVzGCQMQkAL6JhV2E1+cQ==
   dependencies:
     "@types/node" "*"
+
+"@types/execa@^2.0.0":
+  version "2.0.0"
+  resolved "https://nexus.eng.toasttab.com/repository/toast_npm/@types/execa/-/execa-2.0.0.tgz#4dd5523520c51834bf8d0c280f460814e5238281"
+  integrity sha512-aBnkJ0r3khaZkHzu9pDZeWXrDg1N/ZtDGRQkK+KIqNVvvTvW+URXMUHQQCQMYdb2GPrcwu9Fq6l9iiT+pirIbg==
+  dependencies:
+    execa "*"
 
 "@types/express-serve-static-core@^4.17.18":
   version "4.17.18"
@@ -3218,6 +3227,11 @@ dot-prop@^5.2.0:
   dependencies:
     is-obj "^2.0.0"
 
+dotenv@^9.0.2:
+  version "9.0.2"
+  resolved "https://nexus.eng.toasttab.com/repository/toast_npm/dotenv/-/dotenv-9.0.2.tgz#dacc20160935a37dea6364aa1bef819fb9b6ab05"
+  integrity sha512-I9OvvrHp4pIARv4+x9iuewrWycX6CcZtoAu1XrzPxc5UygMJXJZYmBsynku8IkrJwgypE5DGNjDPmPRhDCptUg==
+
 duplexer@^0.1.2:
   version "0.1.2"
   resolved "https://nexus.eng.toasttab.com/repository/toast_npm/duplexer/-/duplexer-0.1.2.tgz#3abe43aef3835f8ae077d136ddce0f276b0400e6"
@@ -3651,6 +3665,21 @@ exec-sh@^0.3.2:
   resolved "https://nexus.eng.toasttab.com/repository/toast_npm/exec-sh/-/exec-sh-0.3.4.tgz#3a018ceb526cc6f6df2bb504b2bfe8e3a4934ec5"
   integrity sha512-sEFIkc61v75sWeOe72qyrqg2Qg0OuLESziUDk/O/z2qgS15y2gWVFrI6f2Qn/qw/0/NCfCEsmNA4zOjkwEZT1A==
 
+execa@*, execa@^5.0.0:
+  version "5.0.0"
+  resolved "https://nexus.eng.toasttab.com/repository/toast_npm/execa/-/execa-5.0.0.tgz#4029b0007998a841fbd1032e5f4de86a3c1e3376"
+  integrity sha512-ov6w/2LCiuyO4RLYGdpFGjkcs0wMTgGE8PrkTHikeUy5iJekXyPIKUjifk5CsE0pt7sMCrMZ3YNqoCj6idQOnQ==
+  dependencies:
+    cross-spawn "^7.0.3"
+    get-stream "^6.0.0"
+    human-signals "^2.1.0"
+    is-stream "^2.0.0"
+    merge-stream "^2.0.0"
+    npm-run-path "^4.0.1"
+    onetime "^5.1.2"
+    signal-exit "^3.0.3"
+    strip-final-newline "^2.0.0"
+
 execa@^1.0.0:
   version "1.0.0"
   resolved "https://nexus.eng.toasttab.com/repository/toast_npm/execa/-/execa-1.0.0.tgz#c6236a5bb4df6d6f15e88e7f017798216749ddd8"
@@ -3677,21 +3706,6 @@ execa@^4.0.0:
     npm-run-path "^4.0.0"
     onetime "^5.1.0"
     signal-exit "^3.0.2"
-    strip-final-newline "^2.0.0"
-
-execa@^5.0.0:
-  version "5.0.0"
-  resolved "https://nexus.eng.toasttab.com/repository/toast_npm/execa/-/execa-5.0.0.tgz#4029b0007998a841fbd1032e5f4de86a3c1e3376"
-  integrity sha512-ov6w/2LCiuyO4RLYGdpFGjkcs0wMTgGE8PrkTHikeUy5iJekXyPIKUjifk5CsE0pt7sMCrMZ3YNqoCj6idQOnQ==
-  dependencies:
-    cross-spawn "^7.0.3"
-    get-stream "^6.0.0"
-    human-signals "^2.1.0"
-    is-stream "^2.0.0"
-    merge-stream "^2.0.0"
-    npm-run-path "^4.0.1"
-    onetime "^5.1.2"
-    signal-exit "^3.0.3"
     strip-final-newline "^2.0.0"
 
 exit@^0.1.2:
