@@ -10,8 +10,8 @@
     "packages/*"
   ],
   "devDependencies": {
-    "@toasttab/eslint-plugin-toast": "^1.3.0",
-    "@toasttab/banquet-cli": "next"
+    "@toasttab/banquet-cli": "next",
+    "@toasttab/eslint-plugin-toast": "^1.3.0"
   },
   "volta": {
     "node": "12.18.0",
@@ -21,5 +21,8 @@
     "semi": false,
     "jsxSingleQuote": true,
     "singleQuote": true
+  },
+  "dependencies": {
+    "@toasttab/caterer": "^3.0.0-alpha.2"
   }
 }
