@@ -17,8 +17,8 @@ Once you've created you SPA via the `banquet-frontend-spa-template` you need to 
     "prodReady": false // Set to true only when you want to release your SPA to production.
   }
 ```
-
- 1. If you are creating a layout spa you should create a new registration function in `wex-banquet-root/src/registration/`, the general structure of this registration function is as follows:
+ 3. Feature flags need to be added to the `__TOAST_BANQUET_INITIAL_DATA__` in the `app/controllers/Banquet.java`. 
+ 4. If you are creating a layout spa you should create a new registration function in `wex-banquet-root/src/registration/`, the general structure of this registration function is as follows:
 
 ```js
 
