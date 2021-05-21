@@ -34,9 +34,9 @@
   },
   "dependencies": {
     "classnames": "^2.2.5",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "@toasttab/banquet-single-spa-react": "0.2.0-alpha.1",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "@toasttab/banquet-single-spa-react": "0.3.0-alpha.0",
     "@toasttab/buffet-pui-styles": "1.0.0-alpha.4",
     "@toasttab/error-boundary": "^0.1.1"
   },

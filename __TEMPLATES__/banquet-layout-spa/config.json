@@ -1,7 +1,7 @@
 {
-  "name": "banquet-child-spa",
+  "name": "banquet-layout-spa",
   "version": "1",
-  "hint": "Child SPAs single screen SPAs loaded into a layout SPA",
+  "hint": "Layout SPAs route enabled spas registered in wex-banquet-root",
   "props": [
     {
       "name": "name",
