@@ -64,9 +64,7 @@ This is a great option if you're making purely frontend changes.
    1. Start the tooling by running the following command in your browser's devtools console `importMapOverrides.enableUI()`
    2. Override any SPAs that are not currently released to preprod, in this case, override `wex-banquet-root` with your locally running version running at `https://dev.eng.toastteam.com:9990/bundle.js` ( port may differ ) `restaurant-admin-layout` `https://dev.eng.toastteam.com:9991/bundle.js` and your new SPA `https://dev.eng.toastteam.com:9992/bundle.js`. Its probably worth getting `wex-banquet-root` and `restaurant-admin-layout` merged and released adhoc on preprod as soon as possible, but the above approach will allow you to develop in preprod immediately.
 
-
 ## Best practices
-    
-- Avoid adding routers to child SPA where possible. Ideally they represent an single screen.
+
 - Load child SPAs into layout-spas using the BanquetLoader package.
 - If you need to load your SPA into legacy pages consider using the Widget SPA template.
