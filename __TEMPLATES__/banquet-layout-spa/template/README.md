@@ -7,7 +7,7 @@ A layout SPA is registered in wex-banquet-root, it should for full and multiple 
 Once you've created you SPA via the `banquet-frontend-spa-template` you need to register it with Banquet.
 
 1. Pull the latest <https://github.com/toasttab/wex-banquet-root>
-2. If you have not registered you spa in the `manifest.json`, please do now. In the `src/static/manifest.json` file register your new SPA.
+2. If you have not registered your spa in the `manifest.json`, please do so now. In the `src/static/manifest.json` file register your new SPA.
 
 ```js
   {
@@ -75,4 +75,3 @@ This is a great option if your making purely frontend changes.
 - Avoid making layout SPAs to large, treat them like dashboards, a good example of a layout SPA is the home page.
 - Consider adding new features via child spas, there are some additional setup costs but in the long run you will end up with smaller, easier to manage SPAs.
 - If in doubt, reach out to the WEX team.
-
