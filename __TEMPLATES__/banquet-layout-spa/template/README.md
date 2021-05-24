@@ -4,7 +4,7 @@ A layout SPA is registered in wex-banquet-root, it should for full and multiple 
 
 ## How to register a SPA
 
-Once you've created you SPA via the `banquet-frontend-spa-template` you need to register it with Banquet.
+Once you've created your SPA via the `banquet-frontend-spa-template` you need to register it with Banquet.
 
 1. Pull the latest <https://github.com/toasttab/wex-banquet-root>
 2. If you have not registered your spa in the `manifest.json`, please do so now. In the `src/static/manifest.json` file register your new SPA.
