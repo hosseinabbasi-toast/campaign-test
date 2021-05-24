@@ -66,6 +66,5 @@ This is a great option if you're making purely frontend changes.
 
 ## Best practices
 
-- Avoid adding routers to child SPA where possible. Ideally they represent an single screen, if you require this choose a layout-spa. These SPAs are loaded via the root-config, this will provide your team with a more isolated and flexible setup.
 - Load child SPAs into layout-spas using the BanquetLoader package.
 - If you need to load your SPA into legacy pages consider using the Widget SPA template.
