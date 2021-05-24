@@ -1,5 +1,5 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
+yarn eslint . --ext ts,tsx,js,jsx
 yarn test
-yarn lerna run prepack

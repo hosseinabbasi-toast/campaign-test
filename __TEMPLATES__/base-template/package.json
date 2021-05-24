@@ -12,7 +12,8 @@
     "watch": "banquet test --watch",
     "coverage": "banquet test --coverage",
     "storybook": "banquet storybook-start",
-    "storybook-build": "banquet storybook-build"
+    "storybook-build": "banquet storybook-build",
+    "prepare": "husky install"
   },
   "private": true,
   "workspaces": [
