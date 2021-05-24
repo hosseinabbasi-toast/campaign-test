@@ -65,7 +65,7 @@ In `dev` and `preprod` you can run `importMapOverrides.enableUI()` this will ena
 
 ### How to develop in live in preprod environment
 
-This is a great option if your making purely frontend changes.
+This is a great option if you're making purely frontend changes.
 
    1. Start the tooling by running the following command in your browser's devtools console `importMapOverrides.enableUI()`
    2. Override any SPAs that are not currently released to preprod, in this case, override `wex-banquet-root` with your locally running version running at `https://dev.eng.toastteam.com:9990/bundle.js` ( port may differ ) and your new SPA `https://dev.eng.toastteam.com:9991/bundle.js`. Its probably worth getting `wex-banquet-root` merged and released adhoc on preprod as soon as possible, but the above approach will allow you to develop in preprod immediately.
