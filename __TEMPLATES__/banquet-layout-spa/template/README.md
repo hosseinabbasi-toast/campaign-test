@@ -4,10 +4,10 @@ A layout SPA is registered in wex-banquet-root, it should for full and multiple 
 
 ## How to register a SPA
 
-Once you've created you SPA via the `banquet-frontend-spa-template` you need to register it with Banquet.
+Once you've created your SPA via the `banquet-frontend-spa-template` you need to register it with Banquet.
 
 1. Pull the latest <https://github.com/toasttab/wex-banquet-root>
-2. If you have not registered you spa in the `manifest.json`, please do now. In the `src/static/manifest.json` file register your new SPA.
+2. If you have not registered your spa in the `manifest.json`, please do so now. In the `src/static/manifest.json` file register your new SPA.
 
 ```js
   {
@@ -65,7 +65,7 @@ In `dev` and `preprod` you can run `importMapOverrides.enableUI()` this will ena
 
 ### How to develop in live in preprod environment
 
-This is a great option if your making purely frontend changes.
+This is a great option if you're making purely frontend changes.
 
    1. Start the tooling by running the following command in your browser's devtools console `importMapOverrides.enableUI()`
    2. Override any SPAs that are not currently released to preprod, in this case, override `wex-banquet-root` with your locally running version running at `https://dev.eng.toastteam.com:9990/bundle.js` ( port may differ ) and your new SPA `https://dev.eng.toastteam.com:9991/bundle.js`. Its probably worth getting `wex-banquet-root` merged and released adhoc on preprod as soon as possible, but the above approach will allow you to develop in preprod immediately.
@@ -75,4 +75,3 @@ This is a great option if your making purely frontend changes.
 - Avoid making layout SPAs to large, treat them like dashboards, a good example of a layout SPA is the home page.
 - Consider adding new features via child spas, there are some additional setup costs but in the long run you will end up with smaller, easier to manage SPAs.
 - If in doubt, reach out to the WEX team.
-
