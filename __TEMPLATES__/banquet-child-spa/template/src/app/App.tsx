@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 import { BanquetCustomProps } from '@toasttab/banquet-types'
 
 export function App(props: BanquetCustomProps) {
