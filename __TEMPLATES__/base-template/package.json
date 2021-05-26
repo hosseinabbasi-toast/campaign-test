@@ -22,6 +22,7 @@
   "devDependencies": {
     "@toasttab/banquet-cli": "next",
     "@toasttab/caterer": "next",
+    "@toasttab/banquet-types": "next",
     "@toasttab/toast-babel": "^0.1.0",
     "@toasttab/eslint-plugin-toast": "^1.2.0",
     "@types/jest": "^26.0.0",
