@@ -1,1 +1,4 @@
 __TEMPLATES__
+dist
+coverage
+node_modules
