@@ -6,6 +6,6 @@ export default {
   component: App
 }
 
-export function AppUsage(args: any) {
+export function AppUsage(args) {
   return <App {...args} />
 }

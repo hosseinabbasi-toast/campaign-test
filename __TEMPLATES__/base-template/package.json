@@ -20,16 +20,20 @@
     "packages/*"
   ],
   "devDependencies": {
-    "@toasttab/banquet-cli": "next",
-    "@toasttab/caterer": "next",
+    "@testing-library/jest-dom": "^5.12.0",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/react-hooks": "^7.0.0",
+    "@toasttab/banquet-cli": "^0.3.0-alpha.0",
     "@toasttab/banquet-types": "next",
-    "@toasttab/toast-babel": "^0.1.0",
+    "@toasttab/caterer": "next",
     "@toasttab/eslint-plugin-toast": "^1.2.0",
+    "@toasttab/toast-babel": "^0.1.0",
     "@types/jest": "^26.0.0",
     "@types/react": "^16.9.23",
     "@types/testing-library__react": "^9.1.3",
     "eslint": "^6.8.0",
     "husky": "^6.0.0",
+    "jest-fetch-mock": "^3.0.3",
     "lerna": "^3.20.2",
     "ts-node": "^9.1.1",
     "typescript": "^4.2.4"
