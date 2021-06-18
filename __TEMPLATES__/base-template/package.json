@@ -23,7 +23,7 @@
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.7",
     "@testing-library/react-hooks": "^7.0.0",
-    "@toasttab/banquet-cli": "^0.3.0-alpha.0",
+    "@toasttab/banquet-cli": "next",
     "@toasttab/banquet-types": "next",
     "@toasttab/caterer": "next",
     "@toasttab/eslint-plugin-toast": "^1.2.0",
