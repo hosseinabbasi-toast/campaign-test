@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React from 'react'
 import ReactDOM from 'react-dom'
 import { App } from './app/App'
 import { banquetSingleSpaReact } from '@toasttab/banquet-single-spa-react'
