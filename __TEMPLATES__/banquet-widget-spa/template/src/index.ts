@@ -8,7 +8,9 @@ const reactLifecycles = banquetSingleSpaReact({
   React,
   ReactDOM,
   cssScope: '{{cssScope}}',
-  rootComponent: App
+  rootComponent: App,
+  domElementGetter: (customProps) =>
+    document.getElementById('{{spaMountPointId}}')
 })
 
 export const bootstrap = reactLifecycles.bootstrap
