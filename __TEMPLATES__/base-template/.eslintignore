@@ -1,4 +1,5 @@
-__TEMPLATES__
+node_modules/
 dist
-coverage
-node_modules
+.husky
+.vscode
+.build

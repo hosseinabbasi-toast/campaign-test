@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React from 'react'
 import ReactDOM from 'react-dom'
 import { App } from './app/App'
 import { banquetSingleSpaReact } from '@toasttab/banquet-single-spa-react'
@@ -8,9 +8,7 @@ const reactLifecycles = banquetSingleSpaReact({
   React,
   ReactDOM,
   cssScope: '{{cssScope}}',
-  rootComponent: App,
-  domElementGetter: (customProps) =>
-    document.getElementById('{{spaMountPointId}}')
+  rootComponent: App
 })
 
 export const bootstrap = reactLifecycles.bootstrap

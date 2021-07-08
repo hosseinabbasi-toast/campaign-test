@@ -7,11 +7,11 @@ import './index.css'
 const reactLifecycles = banquetSingleSpaReact({
   React,
   ReactDOM,
-  // Layout SPAs should have a domElementGetter function to add themselves to a DOM element - the default is single-spa-application:root
+  cssScope: '{{cssScope}}',
+  rootComponent: App,
   domElementGetter: () => {
     return document.getElementById('single-spa-application:root')
-  },
-  rootComponent: App
+  }
 })
 
 export const bootstrap = reactLifecycles.bootstrap
