@@ -6,4 +6,5 @@ singlePageAppBuild {
   unifiedVersioning = true
   notify = true
   channel = '{{channel}}'
+  useToastSonarQube = true
 }
