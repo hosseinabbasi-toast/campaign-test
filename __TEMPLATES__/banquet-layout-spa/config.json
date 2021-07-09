@@ -11,7 +11,7 @@
     {
       "name": "cssScope",
       "message": "CSS scope",
-      "hint": "Prefix with your teams name and a short version of the spa name eg. wex-es"
+      "hint": "Prefix with your teams name and a short version of the spa name eg. data-wex-es"
     },
     {
       "name": "channel",

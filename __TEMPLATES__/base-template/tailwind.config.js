@@ -10,5 +10,5 @@ module.exports = {
       './node_modules/@toasttab/buffet-pui-*/dist/esm/index.js'
     ]
   },
-  important: process.env.STORYBOOK ? false : '[data-{{cssScope}}]'
+  important: process.env.STORYBOOK ? false : '[{{cssScope}}]'
 }
