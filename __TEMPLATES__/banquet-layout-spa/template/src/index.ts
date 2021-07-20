@@ -10,7 +10,13 @@ const reactLifecycles = banquetSingleSpaReact({
   cssScope: '{{cssScope}}',
   rootComponent: App,
   domElementGetter: () => {
-    return document.getElementById('single-spa-application:root')
+    const el = document.getElementById('single-spa-application:root')
+    if (!el) {
+      throw new Error(
+        'single-spa-application:root does not exist, it is required for layout spas'
+      )
+    }
+    return el
   }
 })
 
