@@ -4,13 +4,20 @@ import { App } from './app/App'
 import { banquetSingleSpaReact } from '@toasttab/banquet-single-spa-react'
 import './index.css'
 
+const mountPoint = 'single-spa-application:root'
 const reactLifecycles = banquetSingleSpaReact({
   React,
   ReactDOM,
   cssScope: '{{cssScope}}',
   rootComponent: App,
   domElementGetter: () => {
-    return document.getElementById('single-spa-application:root')
+    const el = document.getElementById(mountPoint)
+    if (!el) {
+      throw new Error(
+        `${mountPoint} does not exist, it is required for layout spas`
+      )
+    }
+    return el
   }
 })
 
