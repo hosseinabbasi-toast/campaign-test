@@ -8,7 +8,7 @@
     "dev": "yarn start",
     "build": "banquet build",
     "analyze": "banquet analyze",
-    "test": "banquet test",
+    "test": "banquet test --coverage",
     "watch": "banquet test --watch",
     "coverage": "banquet test --coverage",
     "storybook": "banquet storybook-start",
