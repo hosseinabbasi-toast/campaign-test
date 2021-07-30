@@ -20,6 +20,10 @@
     "packages/*"
   ],
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.0.4",
+    "@testing-library/react-hooks": "^3.2.1",
+    "@testing-library/user-event": "^13.1.9",
     "@toasttab/banquet-cli": "^0.4.1",
     "@toasttab/caterer": "^3.0.0",
     "@toasttab/banquet-types": "^1.0.0",
@@ -30,6 +34,7 @@
     "@types/testing-library__react": "^10.2.0",
     "eslint": "^7.30.0",
     "husky": "^6.0.0",
+    "jest-fetch-mock": "^3.0.3",
     "lerna": "^4.0.0",
     "ts-node": "^10.0.0",
     "typescript": "^4.3.5",
