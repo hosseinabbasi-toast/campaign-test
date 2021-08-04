@@ -7,7 +7,7 @@ module.exports = {
     content: [
       './src/**/*.@(js|jsx|ts|tsx|css)',
       './packages/**/*.@(js|jsx|ts|tsx|css)',
-      './node_modules/@toasttab/buffet-pui-*/dist/esm/index.js'
+      './node_modules/@toasttab/buffet-pui-*/dist/esm/**/*.js'
     ]
   },
   important: '[{{cssScope}}]'
