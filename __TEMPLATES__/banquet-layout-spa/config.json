@@ -17,6 +17,19 @@
       "name": "channel",
       "message": "Slack channel",
       "hint": "A slack team alert channel eg. #wex-dev-alerts"
+    },
+    {
+      "name": "child-spa-name",
+      "message": "Name of child SPA",
+      "hint": "This is the name of the child SPA you will load"
+    },
+    {
+      "name": "child-spa-route",
+      "message": "The name of the internal route",
+      "hint": "The basename will be automatically added to this route"
     }
+  ],
+  "scripts": [
+    "yarn add -W react-router-dom @toasttab/buffet-pui-error-pages @toasttab/banquet-single-spa-react"
   ]
 }
