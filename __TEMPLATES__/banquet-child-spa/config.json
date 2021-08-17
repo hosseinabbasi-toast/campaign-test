@@ -1,7 +1,7 @@
 {
-  "name": "banquet-child-spa",
+  "name": "child",
   "version": "1",
-  "hint": "Child SPAs single screen SPAs loaded into a layout SPA",
+  "hint": "Typescript: SPA designed to load into Layout SPA",
   "props": [
     {
       "name": "name",

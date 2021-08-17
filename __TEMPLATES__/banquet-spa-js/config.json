@@ -1,7 +1,7 @@
 {
-  "name": "banquet-spa-js ( Legacy )",
+  "name": "generic",
   "version": "1",
-  "hint": "( Legacy ) Child SPAs single screen SPAs loaded into a layout SPA",
+  "hint": "Javascript: Generic SPA template",
   "props": [
     {
       "name": "name",
