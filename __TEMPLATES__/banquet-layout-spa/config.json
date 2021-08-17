@@ -1,7 +1,7 @@
 {
-  "name": "banquet-layout-spa",
+  "name": "layout",
   "version": "1",
-  "hint": "Layout SPAs route enabled spas registered in wex-banquet-root",
+  "hint": "Typescript: Layout SPAs contain multiple child SPAs and register in a route config",
   "props": [
     {
       "name": "name",
