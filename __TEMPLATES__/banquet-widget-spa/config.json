@@ -1,6 +1,7 @@
 {
   "name": "widget",
   "version": "1",
+  "order": 3,
   "hint": "Typescript: Register in a route config - appear across multiple routes",
   "props": [
     {

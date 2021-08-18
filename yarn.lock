@@ -2597,10 +2597,10 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
-"@toasttab/banquet-cli@^0.4.1":
-  version "0.4.1"
-  resolved "https://nexus.eng.toasttab.com/repository/toast_npm/@toasttab/banquet-cli/-/banquet-cli-0.4.1.tgz#a2119516b124db3db777f6213ca4ccd8c0d2fab0"
-  integrity sha512-oIGH2adiHPFKHiPueY8R+WO+vvopQYcKDq0k0KcDrNnmov+WD50NFe4TQuBvHVnWQqhYIgv3w23IruaTGm5uwg==
+"@toasttab/banquet-cli@^0.6.0-alpha.1":
+  version "0.6.0-alpha.1"
+  resolved "https://nexus.eng.toasttab.com/repository/toast_npm/@toasttab/banquet-cli/-/banquet-cli-0.6.0-alpha.1.tgz#50a0fcbc476150f89c7b9d61c724d61bfed422b6"
+  integrity sha512-RZw3nj21Cuac+/m9NacRnkqnoYirrSUhM2mTTIZlocjz2VLDZRqNEIofwfWsymgenWya8kvb4ncjfvd9qQ0fjw==
   dependencies:
     "@babel/core" "^7.12.10"
     "@babel/plugin-transform-flow-strip-types" "^7.12.10"
@@ -2616,7 +2616,7 @@
     "@storybook/builder-webpack5" "^6.3.2"
     "@storybook/manager-webpack5" "^6.3.2"
     "@storybook/react" "^6.3.2"
-    "@toasttab/banquet-webpack" "^0.3.1"
+    "@toasttab/banquet-webpack" "^0.4.0"
     "@toasttab/webpack-importmap-dev-override-plugin" "^0.2.2"
     "@types/cosmiconfig" "^6.0.0"
     "@types/express" "^4.17.11"
@@ -2648,6 +2648,7 @@
     path-exists "^4.0.0"
     portfinder "^1.0.28"
     rimraf "^3.0.2"
+    string-hash "^1.1.3"
     tslib "^1"
     update-notifier "^5.1.0"
     webpack-bundle-analyzer "^4.4.2"
@@ -2656,10 +2657,10 @@
     webpack-merge "^5.7.3"
     write-json-file "^4.3.0"
 
-"@toasttab/banquet-webpack@^0.3.1":
-  version "0.3.1"
-  resolved "https://nexus.eng.toasttab.com/repository/toast_npm/@toasttab/banquet-webpack/-/banquet-webpack-0.3.1.tgz#25d6e0224d42e5644e7e50c63bdfd5271ee94df8"
-  integrity sha512-vV95HHacZmIYf7PzqbVswvUVxg3zxt8ogPTMepmX4QVoU08XksGAwn6G5BP8jtHlAB7LqGsca1C7ND/cf7vKGw==
+"@toasttab/banquet-webpack@^0.4.0":
+  version "0.4.0"
+  resolved "https://nexus.eng.toasttab.com/repository/toast_npm/@toasttab/banquet-webpack/-/banquet-webpack-0.4.0.tgz#670e0346602e0da4d0a0c24be36c2f8d247c6dc6"
+  integrity sha512-I64hIEmWlmnA3L14X7v4Wn+3yeWP2XUXaCGMcprbJhdpz/gW5ih1NVvHdDbl2UTN7DmyNPDoV0p7vcWx5poFew==
   dependencies:
     "@svgr/webpack" "^5.5.0"
     autoprefixer "^10.2.6"
@@ -2668,7 +2669,7 @@
     copy-webpack-plugin "^6.4.1"
     css-loader "^5.2.6"
     css-minimizer-webpack-plugin "^3.0.2"
-    file-loader "^6.2.0"
+    dotenv-webpack "^7.0.3"
     get-port "^5.1.1"
     glob "^7.1.6"
     graphql-tag "^2.11.0"
@@ -2680,10 +2681,10 @@
     postcss-loader "^6.1.1"
     postcss-url "^10.1.3"
     react-refresh "^0.9.0"
+    string-hash "^1.1.3"
     style-loader "^2.0.0"
     systemjs-webpack-interop "^2.3.4"
     tailwindcss "^2.2.4"
-    url-loader "^4.1.1"
 
 "@toasttab/copy-template@^0.1.3":
   version "0.1.3"
@@ -5724,7 +5725,7 @@ dotenv-webpack@^1.8.0:
   dependencies:
     dotenv-defaults "^1.0.2"
 
-dotenv-webpack@^7.0.0:
+dotenv-webpack@^7.0.0, dotenv-webpack@^7.0.3:
   version "7.0.3"
   resolved "https://nexus.eng.toasttab.com/repository/toast_npm/dotenv-webpack/-/dotenv-webpack-7.0.3.tgz#f50ec3c7083a69ec6076e110566720003b7b107b"
   integrity sha512-O0O9pOEwrk+n1zzR3T2uuXRlw64QxHSPeNN1GaiNBloQFNaCUL9V8jxSVz4jlXXFP/CIqK8YecWf8BAvsSgMjw==
@@ -11719,6 +11720,11 @@ stream-shift@^1.0.0:
   version "1.0.1"
   resolved "https://nexus.eng.toasttab.com/repository/toast_npm/stream-shift/-/stream-shift-1.0.1.tgz#d7088281559ab2778424279b0877da3c392d5a3d"
   integrity sha512-AiisoFqQ0vbGcZgQPY1cdP2I76glaVA/RauYR4G4thNFgkTqr90yXTo4LYX60Jl+sIlPNHHdGSwo01AvbKUSVQ==
+
+string-hash@^1.1.3:
+  version "1.1.3"
+  resolved "https://nexus.eng.toasttab.com/repository/toast_npm/string-hash/-/string-hash-1.1.3.tgz#e8aafc0ac1855b4666929ed7dd1275df5d6c811b"
+  integrity sha1-6Kr8CsGFW0Zmkp7X3RJ1311sgRs=
 
 string-length@^4.0.1:
   version "4.0.2"
