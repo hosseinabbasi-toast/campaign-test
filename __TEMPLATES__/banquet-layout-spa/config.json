@@ -1,7 +1,7 @@
 {
   "name": "layout",
   "version": "1",
-  "order": "2",
+  "order": 2,
   "hint": "Typescript: Layout SPAs contain multiple child SPAs and register in a route config",
   "props": [
     {

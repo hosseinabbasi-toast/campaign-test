@@ -1,7 +1,7 @@
 {
   "name": "generic",
   "version": "1",
-  "order": "4",
+  "order": 4,
   "hint": "Javascript: Generic SPA template",
   "props": [
     {
