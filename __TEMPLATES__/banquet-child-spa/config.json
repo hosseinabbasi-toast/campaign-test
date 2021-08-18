@@ -1,6 +1,7 @@
 {
   "name": "child",
   "version": "1",
+  "order": "1",
   "hint": "Typescript: SPA designed to load into Layout SPA",
   "props": [
     {
