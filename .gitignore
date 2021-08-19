@@ -6,3 +6,4 @@ coverage
 yarn-error.log
 yarn-debug.log
 tmp
+.DS_Store
