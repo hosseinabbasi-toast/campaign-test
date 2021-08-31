@@ -23,6 +23,11 @@
       "name": "spaMountPointId",
       "message": "Mount point id",
       "hint": "The id of the html element, you wish to mount the widget into"
+    },
+    {
+      "name": "codeowner",
+      "message": "Github CODEOWNERS example @toasttab/wex",
+      "hint": "CODEOWNERS are automatically added for review"
     }
   ]
 }
