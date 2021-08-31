@@ -28,7 +28,13 @@
       "name": "child-spa-route",
       "message": "The name of the internal route",
       "hint": "The basename will be automatically added to this route"
+    },
+    {
+      "name": "codeowner",
+      "message": "Github CODEOWNERS example @toasttab/wex",
+      "hint": "CODEOWNERS are automatically added for review"
     }
+
   ],
   "scripts": [
     "yarn add -W react-router-dom @toasttab/buffet-pui-error-pages @toasttab/banquet-single-spa-react"

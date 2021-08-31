@@ -18,6 +18,11 @@
       "name": "channel",
       "message": "Slack channel",
       "hint": "A slack team alert channel eg. #wex-dev-alerts"
+    },
+    {
+      "name": "codeowner",
+      "message": "Github CODEOWNERS example @toasttab/wex",
+      "hint": "CODEOWNERS are automatically added for review"
     }
   ]
 }
