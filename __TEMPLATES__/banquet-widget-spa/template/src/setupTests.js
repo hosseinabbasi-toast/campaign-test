@@ -3,6 +3,7 @@
 import 'regenerator-runtime/runtime'
 import { configure as RTLConfigure } from '@testing-library/react'
 import '@testing-library/jest-dom/extend-expect'
+import fetchMock from 'jest-fetch-mock'
 
 fetchMock.enableMocks()
 RTLConfigure({ testIdAttribute: 'data-testid' })
