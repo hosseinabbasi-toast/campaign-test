@@ -14,4 +14,4 @@ const reactLifecycles = banquetSingleSpaReact({
 export const bootstrap = reactLifecycles.bootstrap
 export const mount = reactLifecycles.mount
 export const unmount = reactLifecycles.unmount
-export const name = {{name}}
+export const name = '{{name}}'
