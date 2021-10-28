@@ -1,7 +1,7 @@
 import * as React from 'react'
 import ReactDOM from 'react-dom'
 import { App } from './app/App'
-import { banquetSingleSpaReact } from '@toasttab/banquet-single-spa-react'
+import { banquetSingleSpaReact } from 'banquet-runtime-modules'
 import './index.css'
 
 const mountPoint = 'single-spa-application:root'
@@ -10,6 +10,10 @@ const reactLifecycles = banquetSingleSpaReact({
   ReactDOM,
   cssScope: '{{cssScope}}',
   rootComponent: App,
+  sentry: {
+    publicKey: '{{sentryPublicKey}}',
+    projectId: '{{sentryProjectId}}'
+  },
   domElementGetter: () => {
     const el = document.getElementById(mountPoint)
     if (!el) {

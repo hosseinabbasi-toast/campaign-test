@@ -10,6 +10,16 @@
       "hint": "Prefix with your teams name and use kebab-case, eg. wex-example-spa"
     },
     {
+      "name": "sentryPublicKey",
+      "message": "sentry public key",
+      "hint": "Please get this from the project - ensure you use the latest version"
+    },
+    {
+      "name": "sentryProjectId",
+      "message": "sentry project id",
+      "hint": "Please get this from the project"
+    },
+    {
       "name": "cssScope",
       "message": "CSS scope",
       "hint": "Prefix with your teams name and a short version of the spa name eg. data-wex-es"
