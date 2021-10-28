@@ -47,6 +47,6 @@
 
   ],
   "scripts": [
-    "yarn add -W react-router-dom @toasttab/buffet-pui-error-pages @toasttab/banquet-single-spa-react"
+    ["yarn", "add", "-W", "react-router-dom", "@toasttab/buffet-pui-error-pages", "@toasttab/banquet-single-spa-react" ]
   ]
 }
