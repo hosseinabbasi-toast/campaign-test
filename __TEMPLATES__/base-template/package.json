@@ -24,7 +24,7 @@
     "@testing-library/react": "^11.0.4",
     "@testing-library/react-hooks": "^3.2.1",
     "@testing-library/user-event": "^13.1.9",
-    "@toasttab/banquet-cli": "lataest",
+    "@toasttab/banquet-cli": "latest",
     "@toasttab/caterer": "latest",
     "@toasttab/banquet-types": "^1.0.0",
     "@toasttab/toast-babel": "^0.1.2",

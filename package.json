@@ -10,7 +10,7 @@
     "packages/*"
   ],
   "devDependencies": {
-    "@toasttab/banquet-cli": "latest",
+    "@toasttab/banquet-cli": "0.8.0",
     "@toasttab/copy-template": "^0.1.3"
   },
   "volta": {
