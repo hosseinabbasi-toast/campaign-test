@@ -2597,10 +2597,10 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
-"@toasttab/banquet-cli@^0.6.0-alpha.1":
-  version "0.6.0-alpha.1"
-  resolved "https://nexus.eng.toasttab.com/repository/toast_npm/@toasttab/banquet-cli/-/banquet-cli-0.6.0-alpha.1.tgz#50a0fcbc476150f89c7b9d61c724d61bfed422b6"
-  integrity sha512-RZw3nj21Cuac+/m9NacRnkqnoYirrSUhM2mTTIZlocjz2VLDZRqNEIofwfWsymgenWya8kvb4ncjfvd9qQ0fjw==
+"@toasttab/banquet-cli@latest":
+  version "0.8.0"
+  resolved "https://nexus.eng.toasttab.com/repository/toast_npm/@toasttab/banquet-cli/-/banquet-cli-0.8.0.tgz#ce4c64ddaf538c73c9e31d17aca25288789ae4dd"
+  integrity sha512-gdXF+n6SEYV2D+02r4QKYtjFYFQBlLAfv13ZemfLG09ZKxg607sXDL9H5k+FgqMmbjx/CHQBQHt1ccmjPwkW5A==
   dependencies:
     "@babel/core" "^7.12.10"
     "@babel/plugin-transform-flow-strip-types" "^7.12.10"
@@ -2616,8 +2616,8 @@
     "@storybook/builder-webpack5" "^6.3.2"
     "@storybook/manager-webpack5" "^6.3.2"
     "@storybook/react" "^6.3.2"
-    "@toasttab/banquet-webpack" "^0.4.0"
-    "@toasttab/webpack-importmap-dev-override-plugin" "^0.2.2"
+    "@toasttab/banquet-webpack" "^0.5.1"
+    "@toasttab/webpack-importmap-dev-override-plugin" "^0.2.3"
     "@types/cosmiconfig" "^6.0.0"
     "@types/express" "^4.17.11"
     "@types/opn" "^5.5.0"
@@ -2657,10 +2657,10 @@
     webpack-merge "^5.7.3"
     write-json-file "^4.3.0"
 
-"@toasttab/banquet-webpack@^0.4.0":
-  version "0.4.0"
-  resolved "https://nexus.eng.toasttab.com/repository/toast_npm/@toasttab/banquet-webpack/-/banquet-webpack-0.4.0.tgz#670e0346602e0da4d0a0c24be36c2f8d247c6dc6"
-  integrity sha512-I64hIEmWlmnA3L14X7v4Wn+3yeWP2XUXaCGMcprbJhdpz/gW5ih1NVvHdDbl2UTN7DmyNPDoV0p7vcWx5poFew==
+"@toasttab/banquet-webpack@^0.5.1":
+  version "0.5.1"
+  resolved "https://nexus.eng.toasttab.com/repository/toast_npm/@toasttab/banquet-webpack/-/banquet-webpack-0.5.1.tgz#39b8bf0ffe6b59f5dfb6b9fdd7ba07415ce9f6be"
+  integrity sha512-Vq0vKzb6HfwPbfqHyI01eTxBTN+OGfJY51p1mGj3dMMxgPTmrdB5eIbme4baUVe6elGKQsneuGyGeMUjkWG1yw==
   dependencies:
     "@svgr/webpack" "^5.5.0"
     autoprefixer "^10.2.6"
@@ -2677,6 +2677,7 @@
     postcss "^8.3.5"
     postcss-custom-properties "^11.0.0"
     postcss-flexbugs-fixes "^5.0.2"
+    postcss-focus-visible "^5.0.0"
     postcss-import "^14.0.2"
     postcss-loader "^6.1.1"
     postcss-url "^10.1.3"
@@ -2685,6 +2686,7 @@
     style-loader "^2.0.0"
     systemjs-webpack-interop "^2.3.4"
     tailwindcss "^2.2.4"
+    webpack-assets-manifest "^5.0.6"
 
 "@toasttab/copy-template@^0.1.3":
   version "0.1.3"
@@ -2693,10 +2695,10 @@
   dependencies:
     copy-template-dir "^1.4.0"
 
-"@toasttab/webpack-importmap-dev-override-plugin@^0.2.2":
-  version "0.2.2"
-  resolved "https://nexus.eng.toasttab.com/repository/toast_npm/@toasttab/webpack-importmap-dev-override-plugin/-/webpack-importmap-dev-override-plugin-0.2.2.tgz#ce28a6a5d6c20cc573c010f229ae64f3e21fc177"
-  integrity sha512-vfWb95lKQB2UeTV/ECvELbT4x/HC7li6R8cYPoyQCF2Tmz6Ib3P2YvPKvmGAe5FrLRvBf4RV7kBnKi0GIe7FLw==
+"@toasttab/webpack-importmap-dev-override-plugin@^0.2.3":
+  version "0.2.3"
+  resolved "https://nexus.eng.toasttab.com/repository/toast_npm/@toasttab/webpack-importmap-dev-override-plugin/-/webpack-importmap-dev-override-plugin-0.2.3.tgz#0a1ca5626b727a2d2e1f1f28d2e6d20bab32fc41"
+  integrity sha512-W4cSUkNKk1bdUiBjk9mS9apP4LiGM2tgDQmAQaal+tWX1oauJBkCaV1eqd0zAzV5ktPK4uKu+Zv1kUOACWpWKQ==
   dependencies:
     "@types/fs-extra" "^9.0.6"
     chalk "^4.1.0"
@@ -2903,6 +2905,11 @@
   version "7.0.8"
   resolved "https://nexus.eng.toasttab.com/repository/toast_npm/@types/json-schema/-/json-schema-7.0.8.tgz#edf1bf1dbf4e04413ca8e5b17b3b7d7d54b59818"
   integrity sha512-YSBPTLTVm2e2OoQIDYx8HaeWJ5tTToLH67kXR7zYNGupXMEHa2++G8k+DczX2cFVgalypqtyZIcU19AFcmOpmg==
+
+"@types/json-schema@^7.0.8":
+  version "7.0.9"
+  resolved "https://nexus.eng.toasttab.com/repository/toast_npm/@types/json-schema/-/json-schema-7.0.9.tgz#97edc9037ea0c38585320b28964dde3b39e4660d"
+  integrity sha512-qcUXuemtEu+E5wZSJHNxUXeCZhAfXKQ41D+duX+VYPde7xyEVZci+/oXKJL13tnRs9lR2pr4fod59GT6/X1/yQ==
 
 "@types/markdown-to-jsx@^6.11.3":
   version "6.11.3"
@@ -4498,6 +4505,14 @@ chalk@^3.0.0:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
 
+chalk@^4.0:
+  version "4.1.2"
+  resolved "https://nexus.eng.toasttab.com/repository/toast_npm/chalk/-/chalk-4.1.2.tgz#aac4e2b7734a740867aeb16bf02aad556a1e7a01"
+  integrity sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==
+  dependencies:
+    ansi-styles "^4.1.0"
+    supports-color "^7.1.0"
+
 chalk@^4.0.0, chalk@^4.1.0, chalk@^4.1.1:
   version "4.1.1"
   resolved "https://nexus.eng.toasttab.com/repository/toast_npm/chalk/-/chalk-4.1.1.tgz#c80b3fab28bf6371e6863325eee67e618b77e6ad"
@@ -5418,7 +5433,7 @@ deep-object-diff@^1.1.0:
   resolved "https://nexus.eng.toasttab.com/repository/toast_npm/deep-object-diff/-/deep-object-diff-1.1.0.tgz#d6fabf476c2ed1751fc94d5ca693d2ed8c18bc5a"
   integrity sha512-b+QLs5vHgS+IoSNcUE4n9HP2NwcHj7aqnJWsjPtuG75Rh5TOaGt0OjAYInh77d5T16V5cRDC+Pw/6ZZZiETBGw==
 
-deepmerge@^4.2.2:
+deepmerge@^4.0, deepmerge@^4.2.2:
   version "4.2.2"
   resolved "https://nexus.eng.toasttab.com/repository/toast_npm/deepmerge/-/deepmerge-4.2.2.tgz#44d2ea3679b8f4d4ffba33f03d865fc1e7bf4955"
   integrity sha512-FJ3UgI4gIl+PHZm53knsuSFpE+nESMr7M4v9QcgB7S63Kj/6WqMiFQJpBBYz1Pt+66bZpP3Q7Lye0Oo9MPKEdg==
@@ -8619,6 +8634,13 @@ locate-path@^6.0.0:
   dependencies:
     p-locate "^5.0.0"
 
+lockfile@^1.0:
+  version "1.0.4"
+  resolved "https://nexus.eng.toasttab.com/repository/toast_npm/lockfile/-/lockfile-1.0.4.tgz#07f819d25ae48f87e538e6578b6964a4981a5609"
+  integrity sha512-cvbTwETRfsFh4nHsL1eGWapU1XFi5Ot9E85sWAwia7Y7EgB7vfqcZhTKZ+l7hCGxSPoushMv5GKhT5PdLv03WA==
+  dependencies:
+    signal-exit "^3.0.2"
+
 lodash._reinterpolate@^3.0.0:
   version "3.0.0"
   resolved "https://nexus.eng.toasttab.com/repository/toast_npm/lodash._reinterpolate/-/lodash._reinterpolate-3.0.0.tgz#0ccf2d89166af03b3663c796538b75ac6e114d9d"
@@ -8628,6 +8650,16 @@ lodash.debounce@^4.0.8:
   version "4.0.8"
   resolved "https://nexus.eng.toasttab.com/repository/toast_npm/lodash.debounce/-/lodash.debounce-4.0.8.tgz#82d79bff30a67c4005ffd5e2515300ad9ca4d7af"
   integrity sha1-gteb/zCmfEAF/9XiUVMArZyk168=
+
+lodash.get@^4.0:
+  version "4.4.2"
+  resolved "https://nexus.eng.toasttab.com/repository/toast_npm/lodash.get/-/lodash.get-4.4.2.tgz#2d177f652fa31e939b4438d5341499dfa3825e99"
+  integrity sha1-LRd/ZS+jHpObRDjVNBSZ36OCXpk=
+
+lodash.has@^4.0:
+  version "4.5.2"
+  resolved "https://nexus.eng.toasttab.com/repository/toast_npm/lodash.has/-/lodash.has-4.5.2.tgz#d19f4dc1095058cccbe2b0cdf4ee0fe4aa37c862"
+  integrity sha1-0Z9NwQlQWMzL4rDN9O4P5Ko3yGI=
 
 lodash.memoize@^4.1.2:
   version "4.1.2"
@@ -9837,6 +9869,11 @@ pbkdf2@^3.0.3:
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
 
+picocolors@^0.2.1:
+  version "0.2.1"
+  resolved "https://nexus.eng.toasttab.com/repository/toast_npm/picocolors/-/picocolors-0.2.1.tgz#570670f793646851d1ba135996962abad587859f"
+  integrity sha512-cMlDqaLEqfSaW8Z7N5Jw+lyIW869EzT73/F5lhtY9cLGoVxSXznfgfXMO0Z5K0o0Q2TkTXq+0KFsdnSe3jDViA==
+
 picomatch@^2.0.4, picomatch@^2.2.1, picomatch@^2.2.3:
   version "2.3.0"
   resolved "https://nexus.eng.toasttab.com/repository/toast_npm/picomatch/-/picomatch-2.3.0.tgz#f1f061de8f6a4bf022892e2d128234fb98302972"
@@ -9995,6 +10032,13 @@ postcss-flexbugs-fixes@^5.0.2:
   version "5.0.2"
   resolved "https://nexus.eng.toasttab.com/repository/toast_npm/postcss-flexbugs-fixes/-/postcss-flexbugs-fixes-5.0.2.tgz#2028e145313074fc9abe276cb7ca14e5401eb49d"
   integrity sha512-18f9voByak7bTktR2QgDveglpn9DTbBWPUzSOe9g0N4WR/2eSt6Vrcbf0hmspvMI6YWGywz6B9f7jzpFNJJgnQ==
+
+postcss-focus-visible@^5.0.0:
+  version "5.0.0"
+  resolved "https://nexus.eng.toasttab.com/repository/toast_npm/postcss-focus-visible/-/postcss-focus-visible-5.0.0.tgz#61e0909244cd15b9075bd40a4f176aa4e2446dbc"
+  integrity sha512-KWMjuX+6Mbt7BvD7L9YETXXx8pmNSlT881Zdebbi5zLKdRIM0FIlwG87i/RXiwTf5nGJdaHA1KKsE6gW+O719A==
+  dependencies:
+    postcss "^7.0.27"
 
 postcss-import@^14.0.2:
   version "14.0.2"
@@ -10318,6 +10362,14 @@ postcss@^7.0.14, postcss@^7.0.26, postcss@^7.0.32, postcss@^7.0.35, postcss@^7.0
     chalk "^2.4.2"
     source-map "^0.6.1"
     supports-color "^6.1.0"
+
+postcss@^7.0.27:
+  version "7.0.39"
+  resolved "https://nexus.eng.toasttab.com/repository/toast_npm/postcss/-/postcss-7.0.39.tgz#9624375d965630e2e1f2c02a935c82a59cb48309"
+  integrity sha512-yioayjNbHn6z1/Bywyb2Y4s3yvDAeXGOyxqD+LnVOinq6Mdmd++SW2wUNVzavyyHxd6+DxzWGIuosg6P1Rj8uA==
+  dependencies:
+    picocolors "^0.2.1"
+    source-map "^0.6.1"
 
 postcss@^8.1.6, postcss@^8.2.1, postcss@^8.2.15, postcss@^8.3.5:
   version "8.3.5"
@@ -11265,6 +11317,15 @@ schema-utils@^2.6.5, schema-utils@^2.7.0:
     ajv "^6.12.4"
     ajv-keywords "^3.5.2"
 
+schema-utils@^3.0:
+  version "3.1.1"
+  resolved "https://nexus.eng.toasttab.com/repository/toast_npm/schema-utils/-/schema-utils-3.1.1.tgz#bc74c4b6b6995c1d88f76a8b77bea7219e0c8281"
+  integrity sha512-Y5PQxS4ITlC+EahLuXaY86TXfR7Dc5lw294alXOq86JAHCihAIZfqv8nNCWvaEJvaC51uN9hbLGeV0cFBdH+Fw==
+  dependencies:
+    "@types/json-schema" "^7.0.8"
+    ajv "^6.12.5"
+    ajv-keywords "^3.5.2"
+
 schema-utils@^3.0.0:
   version "3.1.0"
   resolved "https://nexus.eng.toasttab.com/repository/toast_npm/schema-utils/-/schema-utils-3.1.0.tgz#95986eb604f66daadeed56e379bfe7a7f963cdb9"
@@ -12051,6 +12112,11 @@ tapable@^1.0.0, tapable@^1.1.3:
   version "1.1.3"
   resolved "https://nexus.eng.toasttab.com/repository/toast_npm/tapable/-/tapable-1.1.3.tgz#a1fccc06b58db61fd7a45da2da44f5f3a3e67ba2"
   integrity sha512-4WK/bYZmj8xLr+HUCODHGF1ZFzsYffasLUgEiMBY4fgtltdO6B4WJtlSbPaDTLpYTcGVwM2qLnFTICEcNxs3kA==
+
+tapable@^2.0:
+  version "2.2.1"
+  resolved "https://nexus.eng.toasttab.com/repository/toast_npm/tapable/-/tapable-2.2.1.tgz#1967a73ef4060a82f12ab96af86d52fdb76eeca0"
+  integrity sha512-GNzQvQTOIP6RyTfE2Qxb8ZVlNmw0n88vp1szwWRimP02mnTsx3Wtn5qRdqY9w2XduFNUgvOwhNnQsjwCp+kqaQ==
 
 tapable@^2.0.0, tapable@^2.1.1, tapable@^2.2.0:
   version "2.2.0"
@@ -12863,6 +12929,19 @@ webidl-conversions@^6.1.0:
   version "6.1.0"
   resolved "https://nexus.eng.toasttab.com/repository/toast_npm/webidl-conversions/-/webidl-conversions-6.1.0.tgz#9111b4d7ea80acd40f5270d666621afa78b69514"
   integrity sha512-qBIvFLGiBpLjfwmYAaHPXsn+ho5xZnGvyGvsarywGNc8VyQJUMHJ8OBKGGrPER0okBeMDaan4mNBlgBROxuI8w==
+
+webpack-assets-manifest@^5.0.6:
+  version "5.0.6"
+  resolved "https://nexus.eng.toasttab.com/repository/toast_npm/webpack-assets-manifest/-/webpack-assets-manifest-5.0.6.tgz#1fe7baf9b57f2d28ff09fcaef3d678cc15912b88"
+  integrity sha512-CW94ylPHurZTmxnYajSFA8763Cv/QFIKNgBwqBLaIOnBjH1EbDUAf8Eq1/i+o8qaKyKXJ3aX7r4/jtpXD88ldg==
+  dependencies:
+    chalk "^4.0"
+    deepmerge "^4.0"
+    lockfile "^1.0"
+    lodash.get "^4.0"
+    lodash.has "^4.0"
+    schema-utils "^3.0"
+    tapable "^2.0"
 
 webpack-bundle-analyzer@^4.4.2:
   version "4.4.2"
