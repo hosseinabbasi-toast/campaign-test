@@ -6,6 +6,6 @@
   "license": "UNLICENSED",
   "private": false,
   "dependencies": {
-    "@toasttab/banquet-single-spa-react": "next"
+    "@toasttab/banquet-single-spa-react": "latest"
   }
 }
