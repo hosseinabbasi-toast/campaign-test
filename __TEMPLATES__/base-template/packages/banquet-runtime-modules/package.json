@@ -1,0 +1,11 @@
+{
+  "name": "@types/banquet-runtime-modules",
+  "version": "0.0.1",
+  "description": "banquet-runtime-modules ts declarations",
+  "types": "index.d.ts",
+  "license": "UNLICENSED",
+  "private": false,
+  "dependencies": {
+    "@toasttab/banquet-single-spa-react": "next"
+  }
+}
