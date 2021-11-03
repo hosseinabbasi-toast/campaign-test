@@ -46,8 +46,7 @@
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "@toasttab/banquet-single-spa-react": "^0.4.1",
-    "@toasttab/buffet-pui-styles": "^2.0.0-alpha.1",
-    "@toasttab/error-boundary": "^0.1.1"
+    "@toasttab/buffet-pui-styles": "^2.0.0-alpha.1"
   },
   "volta": {
     "node": "12.18.0",

@@ -3,10 +3,8 @@ import { ErrorBoundary } from '@toasttab/error-boundary'
 
 export function App(props) {
   return (
-    <ErrorBoundary>
-      <div className='p-4 type-headline-1 text-link'>
-        Hello World!
-      </div>
-    </ErrorBoundary>
+    <div className='p-4 type-headline-1 text-link'>
+      Hello World!
+    </div>
   )
 }
