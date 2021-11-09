@@ -12,11 +12,11 @@ export default {
 }
 
 export function AppUsage(args) {
-  return <SetSingleSpaContext
-    value={
-      { auth: { userInfo: { firstName: 'Foo' } } } as BanquetCustomProps
-    }
-  >
-    <App {...args} />
-  </SetSingleSpaContext>
+  return (
+    <SetSingleSpaContext
+      value={{ auth: { userInfo: { firstName: 'Foo' } } } as BanquetCustomProps}
+    >
+      <App {...args} />
+    </SetSingleSpaContext>
+  )
 }
