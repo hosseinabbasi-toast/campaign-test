@@ -1,6 +1,5 @@
 import * as React from 'react'
 import { App } from './App'
-import { BanquetCustomProps } from '@toasttab/banquet-types'
 import { SetSingleSpaContext } from 'banquet-runtime-modules'
 
 export default {
@@ -12,11 +11,9 @@ export default {
 }
 
 export function AppUsage(args) {
-  return <SetSingleSpaContext
-    value={
-      { auth: { userInfo: { firstName: 'Foo' } } } as BanquetCustomProps
-    }
-  >
-    <App {...args} />
-  </SetSingleSpaContext>
+  return (
+    <SetSingleSpaContext value={{ auth: { userInfo: { firstName: 'Foo' } } }}>
+      <App {...args} />
+    </SetSingleSpaContext>
+  )
 }
