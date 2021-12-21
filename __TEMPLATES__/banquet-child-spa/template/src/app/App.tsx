@@ -1,5 +1,7 @@
 import * as React from 'react'
 
-export function App(props) {
+type AppProps = {}
+
+export function App(props: AppProps) {
   return <div className='p-4 type-headline-1 text-link'>Hello World!</div>
 }

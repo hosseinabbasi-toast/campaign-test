@@ -6,7 +6,9 @@ import {
 } from '@toasttab/banquet-single-spa-react'
 import { ErrorPage404 } from '@toasttab/buffet-pui-error-pages'
 
-export function App(props) {
+type AppProps = {}
+
+export function App(props: AppProps) {
   const { basename } = useBanquetProps()
   return (
     <BrowserRouter basename={basename}>
