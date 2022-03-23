@@ -1,8 +1,0 @@
-{
-  "recommendations": [
-    "dbaeumer.vscode-eslint",
-    "bradlc.vscode-tailwindcss",
-    "christian-kohler.path-intellisense",
-    "silvenon.mdx"
-  ]
-}

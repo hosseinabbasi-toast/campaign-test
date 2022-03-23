@@ -1,3 +1,0 @@
-root: true
-extends:
-  - 'plugin:@toasttab/toast/browser-react-typescript'
