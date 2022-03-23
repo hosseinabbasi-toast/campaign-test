@@ -19,7 +19,7 @@ cd SPA_REPO_NAME
 
 Pull the empty repo onto your local machine.
 ```
-yarn && yarn banquet create
+yarn && yarn generate-spa
 ```
 
 See https://toasttab.atlassian.net/wiki/spaces/FE/pages/491847930/How+to+Create+a+new+SPA

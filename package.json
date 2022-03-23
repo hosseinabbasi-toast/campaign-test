@@ -3,7 +3,7 @@
   "version": "1.0.0-SNAPSHOT",
   "license": "UNLICENSED",
   "scripts": {
-    "banquet-create": "banquet generate banquet/spa"
+    "generate-spa": "banquet generate banquet/spa"
   },
   "private": true,
   "workspaces": [
