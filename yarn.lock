@@ -3196,10 +3196,10 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
-"@toasttab/banquet-cli@0.11.1-alpha.1":
-  version "0.11.1-alpha.1"
-  resolved "https://nexus.eng.toasttab.com/repository/toast_npm/@toasttab/banquet-cli/-/banquet-cli-0.11.1-alpha.1.tgz#1e6a9fd75bcdb56e218bdbf029f7714f556a40ed"
-  integrity sha512-ImXqIEDMIduyo3pKv/f4kb7Oe/oMkl63sTobKBM1EA2Gq5TxuIolfaplZHeSGOAjzD3ofk7Y8Uu9s4fS0VouQg==
+"@toasttab/banquet-cli@0.11.1":
+  version "0.11.1"
+  resolved "https://nexus.eng.toasttab.com/repository/toast_npm/@toasttab/banquet-cli/-/banquet-cli-0.11.1.tgz#47292a60527840627b5dd1ad9b629c452601a94c"
+  integrity sha512-A4gQdwIAuAQ5Lzcy00SE/sdotK+Dppfai1iBoy8P+Mx3Y+sP+ApahxlekozwXkRxhgMijX+264v9KNfJvbaLhQ==
   dependencies:
     "@babel/core" "^7.12.10"
     "@babel/plugin-transform-flow-strip-types" "^7.12.10"
