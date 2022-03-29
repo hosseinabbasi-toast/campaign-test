@@ -24,7 +24,7 @@ cd my-spa
 
 Run the generate-spa command
 ```
-yarn && yarn generate-spa
+yarn && yarn banquet generate banquet/spa
 ```
 
 Test it out
