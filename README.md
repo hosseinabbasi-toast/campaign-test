@@ -4,22 +4,33 @@ How to use this template.
 
 **Clone the template in github:**
 
-Navigate to where you keep your projects
+In a web browser, click the "Use this template" button, or navigate to:
+
+https://github.com/toasttab/banquet-frontend-template/generate
+
+Enter your repository name: e.g. my-spa
+
+In a terminal, navigate to where you keep your projects
 
 ```
 cd ~/toast/git-repos
 ```
 
-Clone the banquet-frontend-template into a new repo
+Clone your new repository
 ```
-git clone git@github.com:toasttab/banquet-frontend-template.git SPA_REPO_NAME
-cd SPA_REPO_NAME
+git clone git@github.com:toasttab/my-spa.git
+cd my-spa
 ```
 
-
-Pull the empty repo onto your local machine.
+Run the generate-spa command
 ```
-yarn && yarn banquet create
+yarn && yarn generate-spa
+```
+
+Test it out
+```
+yarn test
+yarn storybook
 ```
 
 See https://toasttab.atlassian.net/wiki/spaces/FE/pages/491847930/How+to+Create+a+new+SPA
