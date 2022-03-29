@@ -1,10 +1,4 @@
 node_modules
-dist
-coverage
-.build
-.env
+yarn.lock
 yarn-error.log
 yarn-debug.log
-lerna-debug.log
-tmp
-.DS_Store
