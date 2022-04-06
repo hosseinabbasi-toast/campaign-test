@@ -22,7 +22,7 @@ cd my-spa
 
 Run the generate command
 ```
-yarn && yarn banquet generate banquet/spa
+yarn && yarn banquet generate spa
 ```
 
 Test it out
