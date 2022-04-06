@@ -20,7 +20,7 @@ git clone git@github.com:toasttab/my-spa.git
 cd my-spa
 ```
 
-Run the generate command
+Run the generate command with the spa blueprint
 ```
 yarn && yarn banquet generate spa
 ```
