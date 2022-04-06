@@ -1,6 +1,4 @@
-# banquet-frontend-spa-template
-
-How to use this template.
+# How to use this template
 
 **Clone the template in github:**
 
@@ -22,9 +20,9 @@ git clone git@github.com:toasttab/my-spa.git
 cd my-spa
 ```
 
-Run the generate-spa command
+Run the generate command with the spa blueprint
 ```
-yarn && yarn banquet generate banquet/spa
+yarn && yarn banquet generate spa
 ```
 
 Test it out
