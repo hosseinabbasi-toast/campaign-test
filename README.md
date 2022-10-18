@@ -22,7 +22,7 @@ cd my-spa
 
 Run the generate command with the spa blueprint
 ```
-yarn && yarn banquet generate spa
+yarn && yarn blueprints generate spa
 ```
 
 Test it out
