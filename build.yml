@@ -1,0 +1,82 @@
+environment:
+  FORCE_COLOR: "1"
+tools:
+  nodejs: nodejs16
+version: 2.0
+stages:
+    - stage: checkout
+      steps:
+        - default_checkout:
+    - stage: install
+      steps:
+        - yarn:
+            - install --ignore-optional
+    - stage: 'test'
+      steps:
+        - yarn:
+            - test
+    - stage: 'version'
+      when: env.BRANCH_NAME == 'main'
+      steps:
+        - tagship:
+            project_type: spa
+            var_name: VERSION
+            tag_initial: true
+        - yarn:
+            - version --no-git-tag-version --new-version $VERSION.0.0
+    - stage: 'storybook'
+      environment:
+        S3_PATH: "sh(script: '[[ $BRANCH_NAME = main ]] && echo cr-admin-campaign || echo branches/cr-admin-campaign/$BRANCH_NAME', returnStdout: true).trim()"
+      steps:
+        - yarn:
+            - storybook-build -o docs
+        - shell:
+            - aws s3 rm --recursive s3://toast-live-api-docs-prod/storybooks/$S3_PATH
+        - upload_to_s3:
+            source: docs
+            target: s3://toast-live-api-docs-prod/storybooks/$S3_PATH
+            extra_args:
+              - --acl bucket-owner-full-control
+    - stage: 'build'
+      steps:
+        - yarn:
+            - build
+    - stage: scan
+      steps:
+        - sonar_scan:
+            project_key: cr-admin-campaign
+            git_repo: toasttab/cr-admin-campaign
+            project_type: nodejs
+    - stage: 'ship'
+      when: env.BRANCH_NAME == 'main'
+      steps:
+        - yarn:
+            - banquet build-import-map-manifest
+                --version=$VERSION
+                --cdnPath=cr-admin-campaign
+                --entry=cr-admin-campaign:main.js
+        - shell:
+            - mv dist/assets-manifest.json dist/assets-manifest-$VERSION.json
+        - upload_to_s3:
+            source: ./dist
+            target: s3://toast-static-assets/spa/cr-admin-campaign/
+            extra_args:
+                - --acl public-read
+    - stage: 'outdated'
+      steps:
+        - yarn:
+            - outdated || echo "Some libraries are out of date."
+
+post:
+  always:
+    steps:
+      - slack_send:
+          channel: ""
+          message: "Notification from cr-admin-campaign build"
+          branches:
+            - main
+          on_success: false
+          on_failure: true
+          on_recovery: true
+      - testship:
+          - ".build/**"

@@ -1,17 +1,88 @@
 {
-  "name": "banquet-frontend-template",
+  "name": "cr-admin-campaign",
   "version": "1.0.0-SNAPSHOT",
+  "main": "index.js",
   "license": "UNLICENSED",
-  "private": true,
-  "devDependencies": {
-    "@toasttab/blueprints-cli": "latest",
-    "typescript": "^4.8.4"
+  "scripts": {
+    "start": "banquet start",
+    "dev": "yarn start",
+    "build": "banquet build --includeContentHash",
+    "analyze": "banquet analyze",
+    "lint": "eslint . --ext ts,tsx,js,jsx --fix",
+    "test:open-results": "open .build/coverage-results/lcov-report/index.html",
+    "test": "banquet test --coverage --optimize",
+    "watch": "banquet test --watch",
+    "coverage": "banquet test --coverage",
+    "storybook": "banquet storybook-start",
+    "storybook-build": "banquet storybook-build",
+    "prepare": "husky install"
   },
+  "private": true,
   "workspaces": [
-    "packages"
+    "packages/*",
+    "local-packages/*"
   ],
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.9.1",
+    "@toasttab/banquet-cli": "latest",
+    "@toasttab/blueprints-cli": "latest",
+    "@toasttab/caterer": "latest",
+    "@toasttab/eslint-plugin-toast": "^2.4.4",
+    "@toasttab/toast-babel": "^0.1.2",
+    "@types/banquet-runtime-modules": "33.0.0",
+    "@types/jest": "^27.5.1",
+    "@types/react": "^17.0.37",
+    "@types/react-dom": "^17.0.11",
+    "@types/react-table": "^7.7.14",
+    "eslint": "^7.30.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "husky": "^6.0.0",
+    "lerna": "^4.0.0",
+    "ts-node": "^10.0.0",
+    "typescript": "~4.4.0",
+    "webpack": "^5.70.0"
+  },
+  "dependencies": {
+    "@sentry/react": "^7.37.2",
+    "@sentry/tracing": "^7.37.2",
+    "@testing-library/react": "12.1.5",
+    "@toasttab/banquet-single-spa-css": "^0.3.0",
+    "@toasttab/buffet-pui-alerts": "^1.2.0",
+    "@toasttab/buffet-pui-badge": "^3.3.14",
+    "@toasttab/buffet-pui-buttons": "^2.5.0",
+    "@toasttab/buffet-pui-card": "^1.6.4",
+    "@toasttab/buffet-pui-config-templates": "^4.1.1",
+    "@toasttab/buffet-pui-date-picker": "^2.2.1",
+    "@toasttab/buffet-pui-date-utilities": "^1.4.2",
+    "@toasttab/buffet-pui-dropdowns": "^7.0.6",
+    "@toasttab/buffet-pui-empty-state": "^0.2.22",
+    "@toasttab/buffet-pui-error-pages": "^0.6.0",
+    "@toasttab/buffet-pui-icons": "^5.5.0",
+    "@toasttab/buffet-pui-illustrations": "^1.1.3",
+    "@toasttab/buffet-pui-image": "^1.0.2",
+    "@toasttab/buffet-pui-loading-indicators": "^2.4.3",
+    "@toasttab/buffet-pui-modal": "^4.4.5",
+    "@toasttab/buffet-pui-pagination": "^0.0.30",
+    "@toasttab/buffet-pui-styles": "^3.2.2",
+    "@toasttab/buffet-pui-table": "^5.3.6",
+    "@toasttab/buffet-pui-toggle-token": "^2.3.8",
+    "@toasttab/buffet-pui-tooltip": "^2.5.2",
+    "@toasttab/env-from-hostname": "^1.0.1",
+    "@types/mocha": "^10.0.1",
+    "axios": "0.21.1",
+    "classnames": "^2.3.1",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-table": "^7.8.0"
+  },
   "volta": {
     "node": "16.14.0",
     "yarn": "1.22.0"
+  },
+  "prettier": {
+    "semi": false,
+    "jsxSingleQuote": true,
+    "singleQuote": true,
+    "trailingComma": "none"
   }
 }

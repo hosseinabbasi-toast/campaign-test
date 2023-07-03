@@ -1,4 +1,12 @@
 node_modules
-yarn.lock
+dist
+coverage
+.build
+.env
 yarn-error.log
 yarn-debug.log
+lerna-debug.log
+tmp
+.DS_Store
+.idea
+.banquet/upgrade-recommendations.json

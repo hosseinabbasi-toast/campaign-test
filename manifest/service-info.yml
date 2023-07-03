@@ -1,0 +1,25 @@
+# For more information about how to populate this component, see these instructions: https://toasttab.atlassian.net/wiki/spaces/TSC/pages/3405874656/Service+information
+
+schemaVersion: "1.0.1" # TODO use this validation schema to confirm that data meets validation requirements: https://github.com/toasttab/service-manifest/blob/main/application/src/main/resources/json/service-info-schema-1.0.1.json
+serviceName: "cr-admin-campaign"
+repositoryUrl: "https://github.com/toasttab/cr-admin-campaign" # TODO confirm github repo
+description: "TODO"
+artifactType: # TODO artifact type(s) must come from these values: https://github.com/toasttab/service-manifest/blob/main/application/src/main/resources/json/service-info-schema-1.0.1.json#L46-L54
+  - "SPA"
+communication:
+  # TODO department(s) must come from these values: https://github.com/toasttab/service-manifest/blob/main/application/src/main/resources/json/service-info-schema-1.0.1.json#L67C15-L81
+  department:
+    - "TODO"
+  githubTeam: ""
+  jiraProjectKey: "TODO"
+  documentationIndexLink: "https://github.com/toasttab/cr-admin-campaign#readme"
+compliance: [] # TODO add "PCI" and/or "SOX" if the service is in the PCI and/or SOX scope
+impact:
+  tier: "TIER_N" # TODO replace N with the correct number 0 through 3
+  incidentImpact:
+    takeOrders: "TODO"
+    fireOrders: "TODO"
+    takePayments: "TODO"
+    fulfillOrders: "TODO"
+    closeShifts: "TODO"
+    financialIntegrity: "TODO"
