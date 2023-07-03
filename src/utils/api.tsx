@@ -5,8 +5,11 @@ import SupportedDeviceType from '../app/constants/types/SupportedDeviceType'
 const aggregatedCardReaderInfoUrl =
     '/reader-updates/v1/reader-updates/card-reader-info'
 
+const instance = axios.create({
+    baseURL: "https://ws-preprod.eng.toasttab.com"
+})
 export const getAggregatedCardReaderInfo = () =>
-    axios
+    instance
         .post(`${aggregatedCardReaderInfoUrl}/retrieve`, {
                 restaurantGuid: "cd1d454f-a798-4dc4-8df5-4e6e10083761",
                 fromDate: "20230614"
@@ -26,7 +29,7 @@ export const getAggregatedCardReaderInfo = () =>
         )
 
 export const getAggregatedCardReaderInfoByDeviceId = (deviceId: string) =>
-    axios
+    instance
         .post(`${aggregatedCardReaderInfoUrl}/retrieve`, {
                 restaurantGuid: "cd1d454f-a798-4dc4-8df5-4e6e10083761",
                 fromDate: "20230614"
