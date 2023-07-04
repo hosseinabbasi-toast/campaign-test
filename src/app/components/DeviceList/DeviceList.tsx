@@ -118,8 +118,8 @@ const DevicesList = ({ loading, error }: DevicesListProps) => {
       const filteredDevices = crInfos.filter(
         (device) =>
           selected.indexOf('all') > -1 ||
-          (device.deviceType &&
-            selected.indexOf(device.deviceType.toLowerCase()) > -1)
+          (device.reader_type &&
+            selected.indexOf(device.reader_type.toLowerCase()) > -1)
       )
       return (
         <CardGrid>

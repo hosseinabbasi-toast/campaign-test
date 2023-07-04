@@ -12,20 +12,12 @@ const Versions = () => {
     >
       <div className='grid grid-cols-2 gap-3'>
         {infoField(
-          'Toast POS application version',
-          currentCRInfo?.terminalHandheld?.posAppVersion
+          'Config version',
+          currentCRInfo?.config_version
         )}
         {infoField(
           'Firmware version',
-          currentCRInfo?.terminalHandheld?.firmwareVersion
-        )}
-        {infoField(
-          'Android OS version',
-          currentCRInfo?.terminalHandheld?.androidOsLevel
-        )}
-        {infoField(
-          'Security patch version',
-          currentCRInfo?.terminalHandheld?.securityPatchVersion
+          currentCRInfo?.firmware_version
         )}
       </div>
     </ScrollPanel>

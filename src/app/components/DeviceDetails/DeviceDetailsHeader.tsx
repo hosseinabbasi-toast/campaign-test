@@ -31,13 +31,13 @@ const DeviceDetailsHeader = ({
       <PageBack as={Link} to='/' onClick={() => setCurrentCRInfo(undefined)} />
       <HeadingGroup
         testId='details_subTitle'
-        subTitle={currentCRInfo?.modelName}
+        subTitle={currentCRInfo?.reader_type}
         className='flex-row'
       >
         <Title testId='details_title'>
           {currentCRInfo
-            ? currentCRInfo.name ||
-              `${currentCRInfo?.modelName} ${currentCRInfo?.serial}`
+            ? currentCRInfo.manufacturer ||
+              `${currentCRInfo?.reader_type} ${currentCRInfo?.device_id}`
             : ''}
         </Title>
       </HeadingGroup>
@@ -65,7 +65,7 @@ const DeviceDetailsHeader = ({
         />
         <Button
           iconLeft={<RestartIcon />}
-          onClick={() => handleRefreshDeviceInfo(currentCRInfo?.serial)}
+          onClick={() => handleRefreshDeviceInfo(currentCRInfo?.device_id)}
           disabled={disabled}
           testId='details_refresh'
         >
