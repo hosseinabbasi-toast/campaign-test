@@ -33,7 +33,7 @@ const CRInfos = () => {
           setError(null)
         })
         .catch((err: AxiosError) => {
-          setCRInfos([])
+          setCRInfos({ CardReaderInfoDetails: [] })
           setError(err)
         })
         .finally(() => {
