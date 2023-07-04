@@ -1,5 +1,6 @@
 enum SupportedDeviceType {
-  BBPOS = 'BBPOS'
+  BBPOS = 'BBPOS',
+  Magtek = 'Magtek'
 }
 
 export default SupportedDeviceType

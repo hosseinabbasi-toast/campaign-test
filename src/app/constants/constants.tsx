@@ -15,8 +15,6 @@ import CardReaderInfo from './types/CardReaderInfo'
 import {UNKNOWN_FIRMWARE, deviceTypeOrder} from './strings'
 import CardReaderInfoDetails from "./types/CardReaderInfoDetails";
 
-const FILTER_NON_ALPHANUMERIC_REGEX = /[^0-9a-z\s]/gi
-
 export const getDeviceIcon = (deviceType: string, size: IconSize = 'sm') => {
   const lowercaseType = deviceType.toLowerCase()
   const iconProps = {
@@ -74,19 +72,8 @@ export const infoField = (label: string, value?: string | number) => (
   </div>
 )
 
-export enum DeviceDetailsSections {
-  DEVICE_HEALTH = 'Device health',
-  CONNECTION_TYPES = 'Connection types',
-  DEVICE_INFORMATION = 'Device information',
-  VERSIONS = 'Versions'
-}
-
 export function formatDate(date: Date) {
   const timeFormat = createFormat(Formats.time.short, 'en-US')
   const dateFormat = createFormat(Formats.date.short, 'en-US')
   return `${timeFormat(date)}, ${dateFormat(date)}`
-}
-
-export function capitalizeFirstLetter(string: string) {
-  return string.charAt(0).toUpperCase() + string.toLowerCase().slice(1)
 }
