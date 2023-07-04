@@ -8,8 +8,8 @@ const aggregatedCardReaderInfoUrl =
 export const getAggregatedCardReaderInfo = () =>
     axios
         .post(`${aggregatedCardReaderInfoUrl}/retrieve`, {
-                restaurantGuid: "cff3ea59-705c-44e9-b695-64a22bab5874",
-                fromDate: "20230614"
+                restaurantGuid: 'cff3ea59-705c-44e9-b695-64a22bab5874',
+                fromDate: '20230614'
             },
             {
                 headers: {
@@ -23,17 +23,3 @@ export const getAggregatedCardReaderInfo = () =>
                     device.reader_type === SupportedDeviceType.BBPOS
             )
         )
-
-export const getAggregatedCardReaderInfoByDeviceId = (deviceId: string) =>
-    axios
-        .post(`${aggregatedCardReaderInfoUrl}/retrieve`, {
-                restaurantGuid: "cff3ea59-705c-44e9-b695-64a22bab5874",
-                fromDate: "20230614"
-            },
-            {
-                headers: {
-                    'Content-Type': "application/json"
-                }
-            })
-        .then((response) => response.data)
-        .then((response) => response.data)

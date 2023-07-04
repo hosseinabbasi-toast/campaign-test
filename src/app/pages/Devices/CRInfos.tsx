@@ -27,8 +27,8 @@ const CRInfos = () => {
     if (!crInfos) {
       setLoading(true)
       getAggregatedCardReaderInfo()
-        .then((devices: CardReaderInfo[]) => {
-          setCRInfos(sortCardReaderInfosByType(devices))
+        .then((crInfos: CardReaderInfo[]) => {
+          setCRInfos(sortCardReaderInfosByType(crInfos))
           setError(null)
         })
         .catch((err: AxiosError) => {

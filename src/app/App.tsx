@@ -3,13 +3,11 @@ import { useBanquetProps, BanquetProps } from 'banquet-runtime-modules'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { ErrorPage403 } from '@toasttab/buffet-pui-error-pages'
 import CRInfos from './pages/Devices/CRInfos'
-import CRInfoDetails from './pages/DeviceDetails/DeviceDetails'
 import CardReaderInfo from './constants/types/CardReaderInfo'
 
 
 const BASE_ROUTE = '/restaurants/admin/devices'
 const CR_INFO_DETAILS_ROUTE = ''
-const DEVICE_DETAILS_ROUTE = '/:serial'
 
 interface CardReaderInfoContextProps {
     crInfos: CardReaderInfo[] | undefined
@@ -57,7 +55,6 @@ export function App(props?: BanquetProps) {
                 <BrowserRouter basename={BASE_ROUTE}>
                     <Routes>
                         <Route element={<CRInfos/>} path={CR_INFO_DETAILS_ROUTE}/>
-                        <Route element={<CRInfoDetails/>} path={DEVICE_DETAILS_ROUTE}/>
                     </Routes>
                 </BrowserRouter>
             </CRInfosContext.Provider>
