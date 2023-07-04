@@ -13,6 +13,7 @@ import { Badge } from '@toasttab/buffet-pui-badge'
 import { createFormat, Formats } from '@toasttab/buffet-pui-date-utilities'
 import CardReaderInfo from './types/CardReaderInfo'
 import {UNKNOWN_FIRMWARE, deviceTypeOrder} from './strings'
+import CardReaderInfoDetails from "./types/CardReaderInfoDetails";
 
 const FILTER_NON_ALPHANUMERIC_REGEX = /[^0-9a-z\s]/gi
 
@@ -34,9 +35,9 @@ export const getDeviceIcon = (deviceType: string, size: IconSize = 'sm') => {
   }
 }
 
-export const sortCardReaderInfosByType = (crInfosList: CardReaderInfo[]) => {
-  if (crInfosList.length > 0) {
-    crInfosList.sort((a: CardReaderInfo, b: CardReaderInfo) => {
+export const sortCardReaderInfosByType = (crInfosList: CardReaderInfoDetails) => {
+  if (crInfosList.CardReaderInfoDetails.length > 0) {
+    crInfosList.CardReaderInfoDetails.sort((a: CardReaderInfo, b: CardReaderInfo) => {
       // sort unsupported devices to end of card list
       if (a.firmware_version.localeCompare(UNKNOWN_FIRMWARE) === 0) {
         return 1

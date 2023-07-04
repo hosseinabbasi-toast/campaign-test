@@ -17,6 +17,7 @@ import { getAggregatedCardReaderInfo } from '../../../utils/api'
 import { sortCardReaderInfosByType } from '../../constants/constants'
 import { LockLockedIcon } from '@toasttab/buffet-pui-icons'
 import ErrorState from '../../components/StateViews/ErrorState'
+import CardReaderInfoDetails from "../../constants/types/CardReaderInfoDetails";
 
 const CRInfos = () => {
   const { setCRInfos, crInfos } = useContext(CRInfosContext)
@@ -27,7 +28,7 @@ const CRInfos = () => {
     if (!crInfos) {
       setLoading(true)
       getAggregatedCardReaderInfo()
-        .then((crInfos: CardReaderInfo[]) => {
+        .then((crInfos: CardReaderInfoDetails) => {
           setCRInfos(sortCardReaderInfosByType(crInfos))
           setError(null)
         })
@@ -51,7 +52,7 @@ const CRInfos = () => {
         </PageHeader>
         <PageBody>
           <SnapshotHeader />
-          {error?.response?.status === 404 || crInfos?.length === 0 ? (
+          {error?.response?.status === 404 || crInfos?.CardReaderInfoDetails.length === 0 ? (
             <ErrorState
               header={
                 "This restaurant doesn't have access to this feature, yet."

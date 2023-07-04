@@ -4,13 +4,14 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { ErrorPage403 } from '@toasttab/buffet-pui-error-pages'
 import CRInfos from './pages/CardReaderInfos/CRInfos'
 import CardReaderInfo from './constants/types/CardReaderInfo'
+import CardReaderInfoDetails from "./constants/types/CardReaderInfoDetails";
 
 
 const BASE_ROUTE = '/restaurants/admin/devices'
 const CR_INFO_DETAILS_ROUTE = ''
 
 interface CardReaderInfoContextProps {
-    crInfos: CardReaderInfo[] | undefined
+    crInfos: CardReaderInfoDetails | undefined
     currentCRInfo: CardReaderInfo | undefined
     setCRInfos: Function
     setCurrentCRInfo: Function
@@ -19,7 +20,7 @@ interface CardReaderInfoContextProps {
 const initialState = {
     crInfos: undefined,
     currentCRInfo: undefined,
-    setCRInfos: (_value: CardReaderInfo[]) => {},
+    setCRInfos: (_value: CardReaderInfoDetails) => {},
     setCurrentCRInfo: (_value: CardReaderInfo) => {}
 }
 
@@ -33,7 +34,7 @@ export function App(props?: BanquetProps) {
         return <ErrorPage403/>
     }
 
-    const [crInfos, setCrInfos] = useState<CardReaderInfo[] | undefined>(
+    const [crInfos, setCrInfos] = useState<CardReaderInfoDetails | undefined>(
         initialState.crInfos
     )
     const [currentCRInfo, setCurrentCRInfo] = useState<CardReaderInfo | undefined>(

@@ -115,7 +115,7 @@ const CardReaderInfosList = ({ loading, error }: DevicesListProps) => {
         />
       )
     } else if (crInfos) {
-      const filteredCRInfos = crInfos.filter(
+      const filteredCRInfos = crInfos.CardReaderInfoDetails.filter(
         (crInfo) =>
           selected.indexOf('all') > -1 ||
           (crInfo.reader_type &&
