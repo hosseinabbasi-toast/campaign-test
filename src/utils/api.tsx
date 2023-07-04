@@ -3,7 +3,7 @@ import CardReaderInfo from '../app/constants/types/CardReaderInfo'
 import SupportedDeviceType from '../app/constants/types/SupportedDeviceType'
 
 const aggregatedCardReaderInfoUrl =
-    '/reader-updates/v1/reader-updates/card-reader-info'
+    '/api/service/reader-updates/v1/card-reader-info'
 
 export const getAggregatedCardReaderInfo = () =>
     axios
@@ -13,7 +13,7 @@ export const getAggregatedCardReaderInfo = () =>
             },
             {
                 headers: {
-                    'Authorization': `Bearer eyJyZWRpcmVjdFVybCI6bnVsbCwic2VjdXJlUmFuZG9tS2V5IjoiY2I2YzVmMGYtNTUyNy00YzZlLWE4ZTQtZjkyMjFhZWYyOWY0c3RhdGUiLCJzZWN1cmVSYW5kb21WYWx1ZSI6ImdwbGtvY2J2cHY3bWdyMDBydDJyZXY3OCIsIm1lc3NhZ2UiOm51bGx9`,
+                    'Authorization': `Bearer eyJyZWRpcmVjdFVybCI6bnVsbCwic2VjdXJlUmFuZG9tS2V5IjoiNTVhNmQwZDUtYzFjYi00NjYyLWJhNzMtNDUxMjNkODU0ODUzc3RhdGUiLCJzZWN1cmVSYW5kb21WYWx1ZSI6ImRoOW8xbnV2bmxjZ2lxZXUwOGpldnNkaCIsIm1lc3NhZ2UiOm51bGx9`,
                     'Content-Type': "application/json"
                 }
             })
@@ -33,7 +33,7 @@ export const getAggregatedCardReaderInfoByDeviceId = (deviceId: string) =>
             },
             {
                 headers: {
-                    'Authorization': `Bearer eyJyZWRpcmVjdFVybCI6bnVsbCwic2VjdXJlUmFuZG9tS2V5IjoiY2I2YzVmMGYtNTUyNy00YzZlLWE4ZTQtZjkyMjFhZWYyOWY0c3RhdGUiLCJzZWN1cmVSYW5kb21WYWx1ZSI6ImdwbGtvY2J2cHY3bWdyMDBydDJyZXY3OCIsIm1lc3NhZ2UiOm51bGx9`,
+                    'Authorization': `Bearer eyJyZWRpcmVjdFVybCI6bnVsbCwic2VjdXJlUmFuZG9tS2V5IjoiNTVhNmQwZDUtYzFjYi00NjYyLWJhNzMtNDUxMjNkODU0ODUzc3RhdGUiLCJzZWN1cmVSYW5kb21WYWx1ZSI6ImRoOW8xbnV2bmxjZ2lxZXUwOGpldnNkaCIsIm1lc3NhZ2UiOm51bGx9`,
                     'Content-Type': "application/json"
                 }
             })
