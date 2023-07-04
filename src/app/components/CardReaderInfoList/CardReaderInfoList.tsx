@@ -8,7 +8,7 @@ import CRInfoCard, {
   CRInfoCardContainer,
   CRInfoCardDivider
 } from '../CardReaderInfoCard/CardReaderInfoCard'
-import { getCurrentDate, getOneWeekAgoDate } from '../../constants/constants'
+import { getCurrentDate, getOneMonthAgoDate } from '../../constants/constants'
 import { CRInfosContext } from '../../App'
 import { AxiosError } from 'axios'
 import ErrorState from '../StateViews/ErrorState'
@@ -25,7 +25,7 @@ const CardReaderInfosList = ({ loading, error }: DevicesListProps) => {
   const [selected, setSelected] = useState<String[]>(['all'])
 
   const currentDate = getCurrentDate()
-  var oneWeekAgo = getOneWeekAgoDate()
+  var oneMonthAgo = getOneMonthAgoDate()
 
   const setFilters = (type: String) => {
     if (type === 'all') {
@@ -69,15 +69,15 @@ const CardReaderInfosList = ({ loading, error }: DevicesListProps) => {
           numberOfMonths={2}
           definedRanges={[
             {
-              label: 'Last 7 days',
+              label: 'Last 30 days',
               range: {
-                from: oneWeekAgo,
+                from: oneMonthAgo,
                 to: currentDate
               }
             }
           ]}
           value={{
-            from: oneWeekAgo,
+            from: oneMonthAgo,
             to: currentDate
           }}
           showDefinedRanges

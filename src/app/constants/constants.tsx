@@ -59,10 +59,10 @@ export const sortCardReaderInfosByType = (crInfosList: CardReaderInfoDetails) =>
 }
 
 export const getCurrentDate = () => new Date()
-export const getOneWeekAgoDate = () => {
-  var oneWeekAgo = getCurrentDate()
-  oneWeekAgo.setDate(oneWeekAgo.getDate() - 7)
-  return oneWeekAgo
+export const getOneMonthAgoDate = () => {
+  var oneMonthAgo = getCurrentDate()
+  oneMonthAgo.setDate(oneMonthAgo.getDate() - 30)
+  return oneMonthAgo
 }
 
 export const infoField = (label: string, value?: string | number) => (

@@ -68,7 +68,7 @@ const CardReaderInfoCard = ({ crInfo }: CardReaderInfoCardProps) => {
         </div>
         <div className='type-default font-semibold mb-1 mt-3'>
           {crInfo?.manufacturer?.replace('_NOT_CONFIGURED', '') ||
-            `${crInfo.manufacturer} ${crInfo.device_id}`}
+            `${crInfo.reader_type} ${crInfo.device_id}`}
         </div>
         <div className='type-subhead my-1'>{crInfo.manufacturer}</div>
         <div className='text-secondary type-caption my-1'>

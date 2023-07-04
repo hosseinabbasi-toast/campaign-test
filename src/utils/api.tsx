@@ -9,7 +9,7 @@ export const getAggregatedCardReaderInfo = () =>
     axios
         .post(`${aggregatedCardReaderInfoUrl}/retrieve`, {
                 restaurantGuid: 'cff3ea59-705c-44e9-b695-64a22bab5874',
-                fromDate: '20230614'
+                fromDate: '20230604'
             },
             {
                 headers: {
