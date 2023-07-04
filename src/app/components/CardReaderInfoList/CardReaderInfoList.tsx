@@ -7,7 +7,7 @@ import { DateRangePicker } from '@toasttab/buffet-pui-date-picker'
 import CRInfoCard, {
   CRInfoCardContainer,
   CRInfoCardDivider
-} from '../DeviceCard/CardReaderInfoCard'
+} from '../CardReaderInfoCard/CardReaderInfoCard'
 import { getCurrentDate, getOneWeekAgoDate } from '../../constants/constants'
 import { CRInfosContext } from '../../App'
 import { AxiosError } from 'axios'
@@ -20,7 +20,7 @@ interface DevicesListProps {
   error?: AxiosError | null
 }
 
-const DevicesList = ({ loading, error }: DevicesListProps) => {
+const CardReaderInfosList = ({ loading, error }: DevicesListProps) => {
   const { crInfos } = useContext(CRInfosContext)
   const [selected, setSelected] = useState<String[]>(['all'])
 
@@ -115,16 +115,16 @@ const DevicesList = ({ loading, error }: DevicesListProps) => {
         />
       )
     } else if (crInfos) {
-      const filteredDevices = crInfos.filter(
-        (device) =>
+      const filteredCRInfos = crInfos.filter(
+        (crInfo) =>
           selected.indexOf('all') > -1 ||
-          (device.reader_type &&
-            selected.indexOf(device.reader_type.toLowerCase()) > -1)
+          (crInfo.reader_type &&
+            selected.indexOf(crInfo.reader_type.toLowerCase()) > -1)
       )
       return (
         <CardGrid>
-          {filteredDevices.map((device, index) => (
-            <CRInfoCard key={index} crInfo={device} />
+          {filteredCRInfos.map((crInfo, index) => (
+            <CRInfoCard key={index} crInfo={crInfo} />
           ))}
         </CardGrid>
       )
@@ -174,4 +174,4 @@ export const CardGrid = ({ children }: { children: React.ReactNode }) => {
   )
 }
 
-export default DevicesList
+export default CardReaderInfosList

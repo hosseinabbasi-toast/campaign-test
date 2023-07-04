@@ -2,7 +2,7 @@ import React, { createContext, useState } from 'react'
 import { useBanquetProps, BanquetProps } from 'banquet-runtime-modules'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { ErrorPage403 } from '@toasttab/buffet-pui-error-pages'
-import CRInfos from './pages/Devices/CRInfos'
+import CRInfos from './pages/CardReaderInfos/CRInfos'
 import CardReaderInfo from './constants/types/CardReaderInfo'
 
 

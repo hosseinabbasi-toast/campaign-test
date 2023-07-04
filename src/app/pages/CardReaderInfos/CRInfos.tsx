@@ -11,7 +11,7 @@ import {
 import CardReaderInfo from '../../constants/types/CardReaderInfo'
 import { patternGeneralIllustrationDataUrl } from '@toasttab/buffet-pui-illustrations'
 import SnapshotHeader from '../../components/SnapshotHeader/SnapshotHeader'
-import DevicesList from '../../components/DeviceList/DeviceList'
+import CardReaderInfosList from '../../components/CardReaderInfoList/CardReaderInfoList'
 import { CRInfosContext } from '../../App'
 import { getAggregatedCardReaderInfo } from '../../../utils/api'
 import { sortCardReaderInfosByType } from '../../constants/constants'
@@ -65,7 +65,7 @@ const CRInfos = () => {
               }
             />
           ) : (
-            <DevicesList loading={loading} error={error} />
+            <CardReaderInfosList loading={loading} error={error} />
           )}
         </PageBody>
       </Page>
