@@ -134,7 +134,7 @@ const CardReaderInfosList = ({ loading, error }: DevicesListProps) => {
   return (
     <div>
       <h3 className='type-headline-5 md:type-headline-4 mb-4 mx-4 md:mx-0'>
-        Devices
+        Readers
       </h3>
       <div>
         {filters}
