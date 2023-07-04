@@ -1,7 +1,7 @@
 export default interface CardReaderInfo {
     "collocation_id":  number//-1217411909,
     "version": number//1,
-    "restaurant_guid": string//"cd1d454f-a798-4dc4-8df5-4e6e10083761",
+    "restaurant_guid": string//"cff3ea59-705c-44e9-b695-64a22bab5874",
     "restaurant_location": string//"UNKNOWN",
     "manufacturer": string//"BBPOS",
     "reader_type": string//"BBPOS",

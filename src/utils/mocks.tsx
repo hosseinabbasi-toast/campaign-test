@@ -8,7 +8,7 @@ thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30)
 export const mockHandheld1: CardReaderInfo = {
   collocation_id: -1217411909,
   version: 1,
-  restaurant_guid: "cd1d454f-a798-4dc4-8df5-4e6e10083761",
+  restaurant_guid: "cff3ea59-705c-44e9-b695-64a22bab5874",
   restaurant_location: "UNKNOWN",
   manufacturer: "BBPOS",
   reader_type: "BBPOS",
