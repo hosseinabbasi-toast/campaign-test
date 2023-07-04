@@ -51,7 +51,7 @@ export const CRInfoCardDivider = () => (
 const CardReaderInfoCard = ({ crInfo }: CardReaderInfoCardProps) => {
   /* modelName will be Unknown model if it does not match any other model in this supported devices list:
   https://github.com/toasttab/device-info/blob/fc4175b45548dcb5e5ce89188b7a2a334c535829/device-info-application/src/main/kotlin/com/toasttab/service/deviceinfo/util/Model.kt#L13-L25 */
-  const isUnsupportedModel = crInfo.manufacturer.localeCompare(UNKNOWN_FIRMWARE) === 0
+  const isUnsupportedModel = crInfo.firmware_version.localeCompare(UNKNOWN_FIRMWARE) === 0
   const deviceIcon = crInfo?.reader_type && getDeviceIcon(crInfo.reader_type)
 
   const lastEventTime = crInfo?.yyyymmdd
@@ -70,15 +70,16 @@ const CardReaderInfoCard = ({ crInfo }: CardReaderInfoCardProps) => {
           {crInfo?.manufacturer?.replace('_NOT_CONFIGURED', '') ||
             `${crInfo.reader_type} ${crInfo.device_id}`}
         </div>
-        <div className='type-subhead my-1'>{crInfo.manufacturer}</div>
+        <div className='type-subhead my-1'>{crInfo.reader_type}</div>
         <div className='text-secondary type-caption my-1'>
           Last event: {lastEventTime}
         </div>
         <CRInfoCardDivider />
         <div className='type-subhead my-1'>Serial number: {crInfo.device_id}</div>
+        <div className='type-subhead my-1'>Config version: {crInfo.config_version}</div>
         {(
           <div className='type-subhead my-1'>
-            Device ID: {crInfo?.device_id}
+            Firmware version: {crInfo?.firmware_version}
           </div>
         )}
       </div>
