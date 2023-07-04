@@ -18,7 +18,7 @@ export const getAggregatedCardReaderInfo = () =>
             })
         .then((response) => response.data)
         /*.then((data) =>
-            data.data.filter(
+            data.CardReaderInfoDetails.filter(
                 (crInfo: CardReaderInfo) =>
                     crInfo.reader_type === SupportedDeviceType.BBPOS
             )
