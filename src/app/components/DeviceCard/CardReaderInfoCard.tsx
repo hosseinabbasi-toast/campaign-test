@@ -4,18 +4,10 @@ import { Link } from 'react-router-dom'
 import { Alert } from '@toasttab/buffet-pui-alerts'
 import { CardContainer } from '@toasttab/buffet-pui-card'
 import {
-  getConnectionIcon,
   getDeviceIcon,
-  getConnectionLabel,
-  getHealthBadge,
   formatDate,
-  getInterfaceTypeFromConnectionData
 } from '../../constants/constants'
 import CardReaderInfo from '../../constants/types/CardReaderInfo'
-import ConnectionEvent from '../../constants/types/ConnectionEvent'
-import NetworkDetails from '../../constants/types/NetworkDetails'
-import ConnectionType from '../../constants/types/ConnectionType'
-import ConnectionStatus from '../../constants/types/ConnectionStatus'
 import { UNKNOWN_FIRMWARE } from '../../constants/strings'
 import SupportedDeviceType from '../../constants/types/SupportedDeviceType'
 import { Button } from '@toasttab/buffet-pui-buttons'

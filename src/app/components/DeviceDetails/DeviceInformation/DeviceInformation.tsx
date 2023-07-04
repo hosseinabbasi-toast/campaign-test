@@ -3,7 +3,6 @@ import {
   DividingLine,
   ScrollPanel
 } from '@toasttab/buffet-pui-config-templates'
-import { Image } from '@toasttab/buffet-pui-image'
 import { CRInfosContext } from '../../../App'
 import { DeviceDetailsSections, infoField } from '../../../constants/constants'
 

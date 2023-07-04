@@ -1,6 +1,3 @@
-import ConnectionEvent from '../app/constants/types/ConnectionEvent'
-import ConnectionStatus from '../app/constants/types/ConnectionStatus'
-import ConnectionType from '../app/constants/types/ConnectionType'
 import CardReaderInfo from '../app/constants/types/CardReaderInfo'
 
 const restaurantGuid = 'cff3ea59-705c-44e9-b695-64a22bab5874'
@@ -52,21 +49,3 @@ export const unsortedDeviceList = [
 export const sortedDeviceList = [
   mockHandheld1, // healthy, handheld
 ]
-
-export const mockNetworkConnectivityEvent: ConnectionEvent = {
-  data: {
-    networkType: ConnectionType.NONE,
-    gateway: '',
-    ipAddress: '',
-    lastConnectedType: '',
-    macAddress: '',
-    networkInterface: '',
-    newStatus: ConnectionStatus.ONLINE,
-    origin: '',
-    ssid: ''
-  },
-  date: '',
-  deviceId: '',
-  serialNumber: '',
-  time: ''
-}

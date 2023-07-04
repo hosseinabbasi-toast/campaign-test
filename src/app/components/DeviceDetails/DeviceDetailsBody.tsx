@@ -7,12 +7,10 @@ import {
   PageTargetNavLoading,
   ScrollPanel
 } from '@toasttab/buffet-pui-config-templates'
-import DeviceHealth from './DeviceHealth/DeviceHealth'
 import DeviceInformation from './DeviceInformation/DeviceInformation'
 import Versions from './Versions/Versions'
 import { Skeleton } from '@toasttab/buffet-pui-loading-indicators'
 import { DeviceDetailsSections } from '../../constants/constants'
-import ConnectionTypes from './ConnectionTypes/ConnectionTypes'
 
 interface DeviceDetailsBodyProps {
   loading: boolean
@@ -53,8 +51,6 @@ const DeviceDetailsBody = ({ loading, error }: DeviceDetailsBodyProps) => {
   ) : (
     <PageBody>
       <PageTargetNavLayout sections={sections}>
-        <DeviceHealth />
-        <ConnectionTypes />
         <DeviceInformation />
         <Versions />
       </PageTargetNavLayout>

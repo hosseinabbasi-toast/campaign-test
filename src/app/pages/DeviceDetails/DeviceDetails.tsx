@@ -8,7 +8,6 @@ import { LayoutProvider, Page } from '@toasttab/buffet-pui-config-templates'
 import { CRInfosContext } from '../../App'
 import { AxiosError } from 'axios'
 import { UNKNOWN_FIRMWARE } from '../../constants/strings'
-import SupportedDeviceType from '../../constants/types/SupportedDeviceType'
 
 const DeviceDetails = () => {
   const navigate = useNavigate()
