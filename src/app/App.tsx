@@ -7,7 +7,7 @@ import CardReaderInfo from './constants/types/CardReaderInfo'
 import CardReaderInfoDetails from "./constants/types/CardReaderInfoDetails";
 
 
-const BASE_ROUTE = '/restaurants/admin/devices'
+const BASE_ROUTE = '/toast/admin/versions/posappversions'
 const CR_INFO_DETAILS_ROUTE = ''
 
 interface CardReaderInfoContextProps {

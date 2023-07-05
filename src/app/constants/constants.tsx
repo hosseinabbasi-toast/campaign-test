@@ -26,8 +26,6 @@ export const getDeviceIcon = (deviceType: string, size: IconSize = 'sm') => {
       return <PosIcon {...iconProps} testId='terminal_icon' />
     case 'handheld':
       return <CellphoneIcon {...iconProps} testId='handheld_icon' />
-    case 'printer':
-      return <PrintIcon {...iconProps} testId='printer_icon' />
     default:
       return <PosIcon {...iconProps} testId='default_icon' />
   }
